@@ -1,0 +1,67 @@
+#id,screen_name,friends_count,followers_count,favourites_count,statuses_count,name,Followed
+1387770396,Big_Data_Face,530,320,2,145,Big Data Face,Yes
+339058810,LHelenoDesigns,9052,8227,578,74560,LeonorHelenoDesigns,
+466604271,r_antares,70,9,5,8,Ro.Corriero,
+1105783249,erikavicaretti,235,67,17,50,Erika V,Yes
+318268631,LauraPippinato,209,72,14,233,Laura Pippinato,
+451782803,MarcoSors,351,170,20,319,Marco Sors,Yes
+161268291,DavidMartinB,666,585,339,9419,David MartinBorregon,Yes
+1462998672,testrunner1000,541,145,0,1949,John Barry,
+14162405,pendolare,404,389,3,1600,pendolaredigitale,Yes
+29186025,afamulari,110,76,0,773,Antonino Famulari,Yes
+233872539,mariopastorelli,142,61,25,562,Mario Pastorelli,Yes
+126074955,stanhbb,36,15,4,28,Stanislas Nanchen,Yes
+59735886,zerology,260,273,18274,3452,Vero X. Y. Zero,Yes
+229709694,Prismatic,3169,40937,79536,7536,Prismatic,Yes
+104186922,ArnaudSouque,753,514,53,1372,Arnaud Souque,
+205795059,OlivierBohrer,227,53,111,490,Olivier,Yes
+1143330170,pappupass2004,1994,564,68,38,HadoopExam.com,
+54428352,anrizal,540,204,202,2529,Anwar Rizal,
+1306018363,BayesCamp,565,86,0,36,BayesCamp,Yes
+640303,dizz,460,478,14,3119,Andy Edmonds,Yes
+1085411,jcfischer,689,732,3379,7811,Jens-Chr. Fischer,Yes
+58127484,al_maisan,480,345,211,3084,Muharem Hrnjadovic,Yes
+1386426690,AdamRzepka,1,1,0,2,Adam Rzepka,Yes
+112137152,jugglingbits,67,37,6,266,Thomas Kappler,Yes
+91971788,GRUPOIOE,1102,593,2,1570,GRUPO IOE,
+1342172868,BigDataHunting,1144,1170,0,167,BigDataHunting,Yes
+57027700,ifesdjeen,448,723,995,8959,Alex P,Yes
+14214153,yogsototh,169,267,48,1594,Yann Esposito,Yes
+483979858,coderweekly,767,579,114,425,Coder Weekly,Yes
+154774806,Home_Cures,22985,21114,0,98301,Home Remedies ,
+37680207,julianschmidli,930,1219,2730,2097,Julian Schmidli,Yes
+25997639,pkfoot,9569,10656,16,2631,PKFoot.com,Yes
+628381200,slakker_tca,1439,384,40,126,Slakker,
+13362342,senya22,1279,87,32,177,senya22,
+46748716,moleskind,623,565,76,2317,Hakan Tuzun Sengun,Yes
+43948593,jmeydam,854,373,5734,11693,Jens Meydam,
+17713078,leonardo_borges,519,691,1,5779,Leonardo Borges,Yes
+13772762,hugoduncan,116,477,355,473,Hugo Duncan,Yes
+40270600,alandipert,348,843,12,2082,Alan,Yes
+14466341,ronmiguel,78,83,0,961,Ron Miguel,Yes
+189913273,RogerAllen,83,33,95,247,Roger Allen,Yes
+150567036,stevendick,164,38,2,571,Steven Dick,
+12464572,JulioBarros,1018,2007,7,3168,Julio Barros,Yes
+412454773,infinite_three,607,359,161,512,The Infinite Three,
+273041939,midpeter444,102,69,60,683,Michael Peterson,Yes
+15115841,hergest,375,136,13,1741,hergest,
+1176478717,rzepkaam,75,14,168,20,Amanda Rzepka,Yes
+703083300,gotozrh,652,228,0,102,GOTO Zürich,Yes
+41817558,ericnormand,571,535,1,2867,Eric Normand,Yes
+16484216,old_sound,574,2264,1017,40558,Álvaro Videla,Yes
+12944042,ivanjovanovic,246,307,36,446,Ivan Jovanovic,Yes
+990647850,AliAhmedKnight1,64,15,0,2,Ali Ahmed,
+241098365,sfertig,23,7,1,1,sfertig,Yes
+13463332,soulofpeace,1120,277,566,3158,soulofpeace,
+5662932,mikaelhuss,255,283,3,1045,Mikael Huss,Yes
+24736901,teddy777,29761,28485,31,3129,Theodore Angelus,Yes
+865120033,erlio_basel,351,108,19,35,Erlio GmbH,
+111918932,davidjacot,385,154,1684,584,David Jacot,Yes
+73074511,pyr,246,542,29,1921,Pierre-Yves,Yes
+534062307,tgkristensen,67,70,5,153,Thomas G. Kristensen,Yes
+39231585,gluggergames,659,709,236,7309,Dragica Kahlina,Yes
+6848912,philippkueng,647,1199,1433,5015,Philipp Küng,Yes
+5156041,cgrand,88,1790,20,1005,Christophe Grand,Yes
+14066472,pacoid,1884,1434,716,3568,paco nathan,Yes
+68652518,xvinz,233,122,13,498,Vincent Marque,Yes
+63643,mpenet,685,309,66,2233,Max Penet,Yes

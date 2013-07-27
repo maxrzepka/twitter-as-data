@@ -1,0 +1,3583 @@
+<?xml version="1.0" encoding="utf-8"?><gexf version="1.1" xmlns="http://www.gexf.net/1.1draft" xmlns:viz="http://www.gexf.net/1.1draft/viz" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.w3.org/2001/XMLSchema-instance">
+  <graph defaultedgetype="directed" mode="static">
+    <attributes class="node" mode="static">
+      <attribute id="0" title="followers_count" type="integer" />
+      <attribute id="1" title="statuses_count" type="integer" />
+      <attribute id="2" title="screen_name" type="string" />
+      <attribute id="3" title="friends_count" type="integer" />
+      <attribute id="4" title="favourites_count" type="integer" />
+      <attribute id="5" title="name" type="string" />
+    </attributes>
+    <nodes>
+      <node id="43404404" label="43404404">
+        <attvalues>
+          <attvalue for="0" value="380" />
+          <attvalue for="1" value="2343" />
+          <attvalue for="2" value="sthuebner" />
+          <attvalue for="3" value="514" />
+          <attvalue for="4" value="1360" />
+          <attvalue for="5" value="Stefan Hübner" />
+        </attvalues>
+      </node>
+      <node id="22210051" label="22210051">
+        <attvalues>
+          <attvalue for="0" value="201" />
+          <attvalue for="1" value="84" />
+          <attvalue for="2" value="scgilardi" />
+          <attvalue for="3" value="212" />
+          <attvalue for="4" value="5" />
+          <attvalue for="5" value="Stephen C. Gilardi" />
+        </attvalues>
+      </node>
+      <node id="28926980" label="28926980">
+        <attvalues>
+          <attvalue for="0" value="566" />
+          <attvalue for="1" value="1489" />
+          <attvalue for="2" value="wpgorman" />
+          <attvalue for="3" value="329" />
+          <attvalue for="4" value="3" />
+          <attvalue for="5" value="Will Gorman" />
+        </attvalues>
+      </node>
+      <node id="36153601" label="36153601">
+        <attvalues>
+          <attvalue for="0" value="6932" />
+          <attvalue for="1" value="11911" />
+          <attvalue for="2" value="bradfordcross" />
+          <attvalue for="3" value="549" />
+          <attvalue for="4" value="1244" />
+          <attvalue for="5" value="bradford cross" />
+        </attvalues>
+      </node>
+      <node id="14684168" label="14684168">
+        <attvalues>
+          <attvalue for="0" value="247" />
+          <attvalue for="1" value="322" />
+          <attvalue for="2" value="BrandonBloom" />
+          <attvalue for="3" value="414" />
+          <attvalue for="4" value="11" />
+          <attvalue for="5" value="Brandon Bloom" />
+        </attvalues>
+      </node>
+      <node id="14214153" label="14214153">
+        <attvalues>
+          <attvalue for="0" value="267" />
+          <attvalue for="1" value="1594" />
+          <attvalue for="2" value="yogsototh" />
+          <attvalue for="3" value="169" />
+          <attvalue for="4" value="48" />
+          <attvalue for="5" value="Yann Esposito" />
+        </attvalues>
+      </node>
+      <node id="454676858" label="454676858">
+        <attvalues>
+          <attvalue for="0" value="574" />
+          <attvalue for="1" value="277" />
+          <attvalue for="2" value="lynaghk" />
+          <attvalue for="3" value="118" />
+          <attvalue for="4" value="23" />
+          <attvalue for="5" value="Kevin Lynagh" />
+        </attvalues>
+      </node>
+      <node id="628381200" label="628381200">
+        <attvalues>
+          <attvalue for="0" value="384" />
+          <attvalue for="1" value="126" />
+          <attvalue for="2" value="slakker_tca" />
+          <attvalue for="3" value="1439" />
+          <attvalue for="4" value="40" />
+          <attvalue for="5" value="Slakker" />
+        </attvalues>
+      </node>
+      <node id="352053266" label="352053266">
+        <attvalues>
+          <attvalue for="0" value="94117" />
+          <attvalue for="1" value="1287" />
+          <attvalue for="2" value="coursera" />
+          <attvalue for="3" value="263" />
+          <attvalue for="4" value="935" />
+          <attvalue for="5" value="Coursera" />
+        </attvalues>
+      </node>
+      <node id="273041939" label="273041939">
+        <attvalues>
+          <attvalue for="0" value="69" />
+          <attvalue for="1" value="683" />
+          <attvalue for="2" value="midpeter444" />
+          <attvalue for="3" value="102" />
+          <attvalue for="4" value="60" />
+          <attvalue for="5" value="Michael Peterson" />
+        </attvalues>
+      </node>
+      <node id="6264792" label="6264792">
+        <attvalues>
+          <attvalue for="0" value="3619" />
+          <attvalue for="1" value="6852" />
+          <attvalue for="2" value="technomancy" />
+          <attvalue for="3" value="96" />
+          <attvalue for="4" value="638" />
+          <attvalue for="5" value="Phil Hagelberg" />
+        </attvalues>
+      </node>
+      <node id="180379640" label="180379640">
+        <attvalues>
+          <attvalue for="0" value="1738" />
+          <attvalue for="1" value="386" />
+          <attvalue for="2" value="clojure_conj" />
+          <attvalue for="3" value="0" />
+          <attvalue for="4" value="0" />
+          <attvalue for="5" value="Clojure/conj" />
+        </attvalues>
+      </node>
+      <node id="13568022" label="13568022">
+        <attvalues>
+          <attvalue for="0" value="496" />
+          <attvalue for="1" value="1283" />
+          <attvalue for="2" value="ohpauleez" />
+          <attvalue for="3" value="130" />
+          <attvalue for="4" value="0" />
+          <attvalue for="5" value="Paulie" />
+        </attvalues>
+      </node>
+      <node id="238285335" label="238285335">
+        <attvalues>
+          <attvalue for="0" value="199" />
+          <attvalue for="1" value="410" />
+          <attvalue for="2" value="alanmalloy" />
+          <attvalue for="3" value="62" />
+          <attvalue for="4" value="71" />
+          <attvalue for="5" value="Alan Malloy" />
+        </attvalues>
+      </node>
+      <node id="48685592" label="48685592">
+        <attvalues>
+          <attvalue for="0" value="454" />
+          <attvalue for="1" value="279" />
+          <attvalue for="2" value="edmundjackson" />
+          <attvalue for="3" value="151" />
+          <attvalue for="4" value="1" />
+          <attvalue for="5" value="Edmund Jackson" />
+        </attvalues>
+      </node>
+      <node id="18160154" label="18160154">
+        <attvalues>
+          <attvalue for="0" value="7030" />
+          <attvalue for="1" value="17896" />
+          <attvalue for="2" value="jboner" />
+          <attvalue for="3" value="448" />
+          <attvalue for="4" value="22" />
+          <attvalue for="5" value="Jonas Bonér" />
+        </attvalues>
+      </node>
+      <node id="80422885" label="80422885">
+        <attvalues>
+          <attvalue for="0" value="7389" />
+          <attvalue for="1" value="1726" />
+          <attvalue for="2" value="kaggle" />
+          <attvalue for="3" value="83" />
+          <attvalue for="4" value="9" />
+          <attvalue for="5" value="Kaggle" />
+        </attvalues>
+      </node>
+      <node id="1387770396" label="1387770396">
+        <attvalues>
+          <attvalue for="0" value="320" />
+          <attvalue for="1" value="145" />
+          <attvalue for="2" value="Big_Data_Face" />
+          <attvalue for="3" value="530" />
+          <attvalue for="4" value="2" />
+          <attvalue for="5" value="Big Data Face" />
+        </attvalues>
+      </node>
+      <node id="23087133" label="23087133">
+        <attvalues>
+          <attvalue for="0" value="95" />
+          <attvalue for="1" value="236" />
+          <attvalue for="2" value="adiherzog" />
+          <attvalue for="3" value="229" />
+          <attvalue for="4" value="298" />
+          <attvalue for="5" value="Adrian Herzog" />
+        </attvalues>
+      </node>
+      <node id="14862437" label="14862437">
+        <attvalues>
+          <attvalue for="0" value="522" />
+          <attvalue for="1" value="104" />
+          <attvalue for="2" value="weavejester" />
+          <attvalue for="3" value="53" />
+          <attvalue for="4" value="1" />
+          <attvalue for="5" value="James Reeves" />
+        </attvalues>
+      </node>
+      <node id="160045088" label="160045088">
+        <attvalues>
+          <attvalue for="0" value="44" />
+          <attvalue for="1" value="60" />
+          <attvalue for="2" value="CounterMedia" />
+          <attvalue for="3" value="31" />
+          <attvalue for="4" value="0" />
+          <attvalue for="5" value="Charles Boucher" />
+        </attvalues>
+      </node>
+      <node id="81581089" label="81581089">
+        <attvalues>
+          <attvalue for="0" value="219" />
+          <attvalue for="1" value="511" />
+          <attvalue for="2" value="nakkaya" />
+          <attvalue for="3" value="280" />
+          <attvalue for="4" value="0" />
+          <attvalue for="5" value="Nurullah Akkaya" />
+        </attvalues>
+      </node>
+      <node id="54129186" label="54129186">
+        <attvalues>
+          <attvalue for="0" value="1945" />
+          <attvalue for="1" value="2504" />
+          <attvalue for="2" value="neil_conway" />
+          <attvalue for="3" value="543" />
+          <attvalue for="4" value="191" />
+          <attvalue for="5" value="Neil Conway" />
+        </attvalues>
+      </node>
+      <node id="990647850" label="990647850">
+        <attvalues>
+          <attvalue for="0" value="15" />
+          <attvalue for="1" value="2" />
+          <attvalue for="2" value="AliAhmedKnight1" />
+          <attvalue for="3" value="64" />
+          <attvalue for="4" value="0" />
+          <attvalue for="5" value="Ali Ahmed" />
+        </attvalues>
+      </node>
+      <node id="46748716" label="46748716">
+        <attvalues>
+          <attvalue for="0" value="565" />
+          <attvalue for="1" value="2317" />
+          <attvalue for="2" value="moleskind" />
+          <attvalue for="3" value="623" />
+          <attvalue for="4" value="76" />
+          <attvalue for="5" value="Hakan Tuzun Sengun" />
+        </attvalues>
+      </node>
+      <node id="91333167" label="91333167">
+        <attvalues>
+          <attvalue for="0" value="37771" />
+          <attvalue for="1" value="6148" />
+          <attvalue for="2" value="climagic" />
+          <attvalue for="3" value="8985" />
+          <attvalue for="4" value="30" />
+          <attvalue for="5" value="Command Line Magic" />
+        </attvalues>
+      </node>
+      <node id="43948593" label="43948593">
+        <attvalues>
+          <attvalue for="0" value="373" />
+          <attvalue for="1" value="11693" />
+          <attvalue for="2" value="jmeydam" />
+          <attvalue for="3" value="854" />
+          <attvalue for="4" value="5734" />
+          <attvalue for="5" value="Jens Meydam" />
+        </attvalues>
+      </node>
+      <node id="13033522" label="13033522">
+        <attvalues>
+          <attvalue for="0" value="1052" />
+          <attvalue for="1" value="8282" />
+          <attvalue for="2" value="michaelklishin" />
+          <attvalue for="3" value="305" />
+          <attvalue for="4" value="146" />
+          <attvalue for="5" value="Michael Klishin" />
+        </attvalues>
+      </node>
+      <node id="16602164" label="16602164">
+        <attvalues>
+          <attvalue for="0" value="9698" />
+          <attvalue for="1" value="996" />
+          <attvalue for="2" value="typesafe" />
+          <attvalue for="3" value="123" />
+          <attvalue for="4" value="490" />
+          <attvalue for="5" value="Typesafe" />
+        </attvalues>
+      </node>
+      <node id="17242168" label="17242168">
+        <attvalues>
+          <attvalue for="0" value="3330" />
+          <attvalue for="1" value="3173" />
+          <attvalue for="2" value="alignedleft" />
+          <attvalue for="3" value="483" />
+          <attvalue for="4" value="2200" />
+          <attvalue for="5" value="Scott Murray" />
+        </attvalues>
+      </node>
+      <node id="314691129" label="314691129">
+        <attvalues>
+          <attvalue for="0" value="304" />
+          <attvalue for="1" value="56" />
+          <attvalue for="2" value="exoscale" />
+          <attvalue for="3" value="1393" />
+          <attvalue for="4" value="6" />
+          <attvalue for="5" value="exoscale" />
+        </attvalues>
+      </node>
+      <node id="1306018363" label="1306018363">
+        <attvalues>
+          <attvalue for="0" value="86" />
+          <attvalue for="1" value="36" />
+          <attvalue for="2" value="BayesCamp" />
+          <attvalue for="3" value="565" />
+          <attvalue for="4" value="0" />
+          <attvalue for="5" value="BayesCamp" />
+        </attvalues>
+      </node>
+      <node id="5878332" label="5878332">
+        <attvalues>
+          <attvalue for="0" value="4816" />
+          <attvalue for="1" value="8716" />
+          <attvalue for="2" value="timdavies" />
+          <attvalue for="3" value="1769" />
+          <attvalue for="4" value="53" />
+          <attvalue for="5" value="Tim Davies" />
+        </attvalues>
+      </node>
+      <node id="16665059" label="16665059">
+        <attvalues>
+          <attvalue for="0" value="259" />
+          <attvalue for="1" value="619" />
+          <attvalue for="2" value="edlich" />
+          <attvalue for="3" value="101" />
+          <attvalue for="4" value="57" />
+          <attvalue for="5" value="edlich" />
+        </attvalues>
+      </node>
+      <node id="14939200" label="14939200">
+        <attvalues>
+          <attvalue for="0" value="2132" />
+          <attvalue for="1" value="17004" />
+          <attvalue for="2" value="seancribbs" />
+          <attvalue for="3" value="305" />
+          <attvalue for="4" value="3132" />
+          <attvalue for="5" value="Sean Cribbs" />
+        </attvalues>
+      </node>
+      <node id="20753504" label="20753504">
+        <attvalues>
+          <attvalue for="0" value="756" />
+          <attvalue for="1" value="8031" />
+          <attvalue for="2" value="ctford" />
+          <attvalue for="3" value="530" />
+          <attvalue for="4" value="0" />
+          <attvalue for="5" value="Chris Ford" />
+        </attvalues>
+      </node>
+      <node id="161268291" label="161268291">
+        <attvalues>
+          <attvalue for="0" value="585" />
+          <attvalue for="1" value="9419" />
+          <attvalue for="2" value="DavidMartinB" />
+          <attvalue for="3" value="666" />
+          <attvalue for="4" value="339" />
+          <attvalue for="5" value="David MartinBorregon" />
+        </attvalues>
+      </node>
+      <node id="751427652" label="751427652">
+        <attvalues>
+          <attvalue for="0" value="323" />
+          <attvalue for="1" value="23" />
+          <attvalue for="2" value="MostlyLazy" />
+          <attvalue for="3" value="1" />
+          <attvalue for="4" value="0" />
+          <attvalue for="5" value="Mostly λazy" />
+        </attvalues>
+      </node>
+      <node id="14569541" label="14569541">
+        <attvalues>
+          <attvalue for="0" value="6999" />
+          <attvalue for="1" value="12239" />
+          <attvalue for="2" value="puredanger" />
+          <attvalue for="3" value="6173" />
+          <attvalue for="4" value="24" />
+          <attvalue for="5" value="Alex Miller" />
+        </attvalues>
+      </node>
+      <node id="39231585" label="39231585">
+        <attvalues>
+          <attvalue for="0" value="709" />
+          <attvalue for="1" value="7309" />
+          <attvalue for="2" value="gluggergames" />
+          <attvalue for="3" value="659" />
+          <attvalue for="4" value="236" />
+          <attvalue for="5" value="Dragica Kahlina" />
+        </attvalues>
+      </node>
+      <node id="53338074" label="53338074">
+        <attvalues>
+          <attvalue for="0" value="1603" />
+          <attvalue for="1" value="1574" />
+          <attvalue for="2" value="IBMCH" />
+          <attvalue for="3" value="307" />
+          <attvalue for="4" value="16" />
+          <attvalue for="5" value="IBM Switzerland" />
+        </attvalues>
+      </node>
+      <node id="43593" label="43593">
+        <attvalues>
+          <attvalue for="0" value="9686" />
+          <attvalue for="1" value="3359" />
+          <attvalue for="2" value="mbostock" />
+          <attvalue for="3" value="228" />
+          <attvalue for="4" value="277" />
+          <attvalue for="5" value="Mike Bostock" />
+        </attvalues>
+      </node>
+      <node id="126074955" label="126074955">
+        <attvalues>
+          <attvalue for="0" value="15" />
+          <attvalue for="1" value="28" />
+          <attvalue for="2" value="stanhbb" />
+          <attvalue for="3" value="36" />
+          <attvalue for="4" value="4" />
+          <attvalue for="5" value="Stanislas Nanchen" />
+        </attvalues>
+      </node>
+      <node id="18367054" label="18367054">
+        <attvalues>
+          <attvalue for="0" value="9465" />
+          <attvalue for="1" value="1680" />
+          <attvalue for="2" value="medriscoll" />
+          <attvalue for="3" value="716" />
+          <attvalue for="4" value="58" />
+          <attvalue for="5" value="Michael E. Driscoll" />
+        </attvalues>
+      </node>
+      <node id="37680207" label="37680207">
+        <attvalues>
+          <attvalue for="0" value="1219" />
+          <attvalue for="1" value="2097" />
+          <attvalue for="2" value="julianschmidli" />
+          <attvalue for="3" value="930" />
+          <attvalue for="4" value="2730" />
+          <attvalue for="5" value="Julian Schmidli" />
+        </attvalues>
+      </node>
+      <node id="150567036" label="150567036">
+        <attvalues>
+          <attvalue for="0" value="38" />
+          <attvalue for="1" value="571" />
+          <attvalue for="2" value="stevendick" />
+          <attvalue for="3" value="164" />
+          <attvalue for="4" value="2" />
+          <attvalue for="5" value="Steven Dick" />
+        </attvalues>
+      </node>
+      <node id="483979858" label="483979858">
+        <attvalues>
+          <attvalue for="0" value="579" />
+          <attvalue for="1" value="425" />
+          <attvalue for="2" value="coderweekly" />
+          <attvalue for="3" value="767" />
+          <attvalue for="4" value="114" />
+          <attvalue for="5" value="Coder Weekly" />
+        </attvalues>
+      </node>
+      <node id="19310677" label="19310677">
+        <attvalues>
+          <attvalue for="0" value="1556" />
+          <attvalue for="1" value="734" />
+          <attvalue for="2" value="todotoit" />
+          <attvalue for="3" value="277" />
+          <attvalue for="4" value="425" />
+          <attvalue for="5" value="ToDo" />
+        </attvalues>
+      </node>
+      <node id="580852153" label="580852153">
+        <attvalues>
+          <attvalue for="0" value="194" />
+          <attvalue for="1" value="219" />
+          <attvalue for="2" value="SwissBigData" />
+          <attvalue for="3" value="30" />
+          <attvalue for="4" value="0" />
+          <attvalue for="5" value="Big Data User Group" />
+        </attvalues>
+      </node>
+      <node id="51546468" label="51546468">
+        <attvalues>
+          <attvalue for="0" value="3946" />
+          <attvalue for="1" value="242" />
+          <attvalue for="2" value="joeerl" />
+          <attvalue for="3" value="167" />
+          <attvalue for="4" value="2" />
+          <attvalue for="5" value="Joe Armstrong" />
+        </attvalues>
+      </node>
+      <node id="881386074" label="881386074">
+        <attvalues>
+          <attvalue for="0" value="66" />
+          <attvalue for="1" value="353" />
+          <attvalue for="2" value="maxrzepka" />
+          <attvalue for="3" value="301" />
+          <attvalue for="4" value="390" />
+          <attvalue for="5" value="Maximilien Rzepka" />
+        </attvalues>
+      </node>
+      <node id="501968170" label="501968170">
+        <attvalues>
+          <attvalue for="0" value="3187" />
+          <attvalue for="1" value="565" />
+          <attvalue for="2" value="SchoolOfData" />
+          <attvalue for="3" value="641" />
+          <attvalue for="4" value="4" />
+          <attvalue for="5" value="School of Data" />
+        </attvalues>
+      </node>
+      <node id="167169119" label="167169119">
+        <attvalues>
+          <attvalue for="0" value="11495" />
+          <attvalue for="1" value="2288" />
+          <attvalue for="2" value="strataconf" />
+          <attvalue for="3" value="1106" />
+          <attvalue for="4" value="50" />
+          <attvalue for="5" value="O'Reilly Strata" />
+        </attvalues>
+      </node>
+      <node id="146629216" label="146629216">
+        <attvalues>
+          <attvalue for="0" value="448" />
+          <attvalue for="1" value="1990" />
+          <attvalue for="2" value="planet_haskell" />
+          <attvalue for="3" value="2" />
+          <attvalue for="4" value="0" />
+          <attvalue for="5" value="planet_haskell" />
+        </attvalues>
+      </node>
+      <node id="732722785" label="732722785">
+        <attvalues>
+          <attvalue for="0" value="600" />
+          <attvalue for="1" value="200" />
+          <attvalue for="2" value="EmacsHaiku" />
+          <attvalue for="3" value="9" />
+          <attvalue for="4" value="0" />
+          <attvalue for="5" value="Emacs Haiku" />
+        </attvalues>
+      </node>
+      <node id="636003" label="636003">
+        <attvalues>
+          <attvalue for="0" value="1673" />
+          <attvalue for="1" value="2837" />
+          <attvalue for="2" value="samaaron" />
+          <attvalue for="3" value="253" />
+          <attvalue for="4" value="334" />
+          <attvalue for="5" value="Sam Aaron" />
+        </attvalues>
+      </node>
+      <node id="304590949" label="304590949">
+        <attvalues>
+          <attvalue for="0" value="2167" />
+          <attvalue for="1" value="468" />
+          <attvalue for="2" value="ClouderaU" />
+          <attvalue for="3" value="1410" />
+          <attvalue for="4" value="0" />
+          <attvalue for="5" value="Cloudera University" />
+        </attvalues>
+      </node>
+      <node id="109958517" label="109958517">
+        <attvalues>
+          <attvalue for="0" value="31059" />
+          <attvalue for="1" value="1929" />
+          <attvalue for="2" value="AlgebraFact" />
+          <attvalue for="3" value="13" />
+          <attvalue for="4" value="23" />
+          <attvalue for="5" value="Algebra Fact" />
+        </attvalues>
+      </node>
+      <node id="11342442" label="11342442">
+        <attvalues>
+          <attvalue for="0" value="177" />
+          <attvalue for="1" value="3292" />
+          <attvalue for="2" value="davekincaid" />
+          <attvalue for="3" value="244" />
+          <attvalue for="4" value="21" />
+          <attvalue for="5" value="Dave Kincaid" />
+        </attvalues>
+      </node>
+      <node id="348101227" label="348101227">
+        <attvalues>
+          <attvalue for="0" value="598" />
+          <attvalue for="1" value="885" />
+          <attvalue for="2" value="overtone" />
+          <attvalue for="3" value="6" />
+          <attvalue for="4" value="21" />
+          <attvalue for="5" value="Overtone" />
+        </attvalues>
+      </node>
+      <node id="15983724" label="15983724">
+        <attvalues>
+          <attvalue for="0" value="17740" />
+          <attvalue for="1" value="921" />
+          <attvalue for="2" value="vimtips" />
+          <attvalue for="3" value="24" />
+          <attvalue for="4" value="0" />
+          <attvalue for="5" value="vimtips" />
+        </attvalues>
+      </node>
+      <node id="16665197" label="16665197">
+        <attvalues>
+          <attvalue for="0" value="75791" />
+          <attvalue for="1" value="3887" />
+          <attvalue for="2" value="martinfowler" />
+          <attvalue for="3" value="336" />
+          <attvalue for="4" value="10" />
+          <attvalue for="5" value="Martin Fowler" />
+        </attvalues>
+      </node>
+      <node id="35367022" label="35367022">
+        <attvalues>
+          <attvalue for="0" value="714" />
+          <attvalue for="1" value="37" />
+          <attvalue for="2" value="lisperati" />
+          <attvalue for="3" value="9" />
+          <attvalue for="4" value="0" />
+          <attvalue for="5" value="Conrad Barski" />
+        </attvalues>
+      </node>
+      <node id="315636336" label="315636336">
+        <attvalues>
+          <attvalue for="0" value="65" />
+          <attvalue for="1" value="35" />
+          <attvalue for="2" value="dribnet" />
+          <attvalue for="3" value="22" />
+          <attvalue for="4" value="0" />
+          <attvalue for="5" value="tom white" />
+        </attvalues>
+      </node>
+      <node id="716086699" label="716086699">
+        <attvalues>
+          <attvalue for="0" value="223" />
+          <attvalue for="1" value="206" />
+          <attvalue for="2" value="techmeshconf" />
+          <attvalue for="3" value="54" />
+          <attvalue for="4" value="28" />
+          <attvalue for="5" value="Tech Mesh" />
+        </attvalues>
+      </node>
+      <node id="57027700" label="57027700">
+        <attvalues>
+          <attvalue for="0" value="723" />
+          <attvalue for="1" value="8959" />
+          <attvalue for="2" value="ifesdjeen" />
+          <attvalue for="3" value="448" />
+          <attvalue for="4" value="995" />
+          <attvalue for="5" value="Alex P" />
+        </attvalues>
+      </node>
+      <node id="14578294" label="14578294">
+        <attvalues>
+          <attvalue for="0" value="3197" />
+          <attvalue for="1" value="5861" />
+          <attvalue for="2" value="josh_wills" />
+          <attvalue for="3" value="832" />
+          <attvalue for="4" value="2441" />
+          <attvalue for="5" value="Josh Wills" />
+        </attvalues>
+      </node>
+      <node id="635388777" label="635388777">
+        <attvalues>
+          <attvalue for="0" value="20614" />
+          <attvalue for="1" value="239" />
+          <attvalue for="2" value="Philosophyflow" />
+          <attvalue for="3" value="1886" />
+          <attvalue for="4" value="115" />
+          <attvalue for="5" value="Philosophy" />
+        </attvalues>
+      </node>
+      <node id="362585949" label="362585949">
+        <attvalues>
+          <attvalue for="0" value="1220" />
+          <attvalue for="1" value="703" />
+          <attvalue for="2" value="OpendataCH" />
+          <attvalue for="3" value="1038" />
+          <attvalue for="4" value="59" />
+          <attvalue for="5" value="Opendata.ch" />
+        </attvalues>
+      </node>
+      <node id="156031097" label="156031097">
+        <attvalues>
+          <attvalue for="0" value="195" />
+          <attvalue for="1" value="89" />
+          <attvalue for="2" value="apanisson" />
+          <attvalue for="3" value="277" />
+          <attvalue for="4" value="7" />
+          <attvalue for="5" value="André Panisson" />
+        </attvalues>
+      </node>
+      <node id="339058810" label="339058810">
+        <attvalues>
+          <attvalue for="0" value="8227" />
+          <attvalue for="1" value="74560" />
+          <attvalue for="2" value="LHelenoDesigns" />
+          <attvalue for="3" value="9052" />
+          <attvalue for="4" value="578" />
+          <attvalue for="5" value="LeonorHelenoDesigns" />
+        </attvalues>
+      </node>
+      <node id="14706299" label="14706299">
+        <attvalues>
+          <attvalue for="0" value="87105" />
+          <attvalue for="1" value="5206" />
+          <attvalue for="2" value="linuxfoundation" />
+          <attvalue for="3" value="10040" />
+          <attvalue for="4" value="84" />
+          <attvalue for="5" value="The Linux Foundation" />
+        </attvalues>
+      </node>
+      <node id="74806908" label="74806908">
+        <attvalues>
+          <attvalue for="0" value="860" />
+          <attvalue for="1" value="1198" />
+          <attvalue for="2" value="VonGomben" />
+          <attvalue for="3" value="556" />
+          <attvalue for="4" value="46" />
+          <attvalue for="5" value="Davide Gomba" />
+        </attvalues>
+      </node>
+      <node id="241098365" label="241098365">
+        <attvalues>
+          <attvalue for="0" value="7" />
+          <attvalue for="1" value="1" />
+          <attvalue for="2" value="sfertig" />
+          <attvalue for="3" value="23" />
+          <attvalue for="4" value="1" />
+          <attvalue for="5" value="sfertig" />
+        </attvalues>
+      </node>
+      <node id="392730389" label="392730389">
+        <attvalues>
+          <attvalue for="0" value="866" />
+          <attvalue for="1" value="1127" />
+          <attvalue for="2" value="ClojureWest" />
+          <attvalue for="3" value="1" />
+          <attvalue for="4" value="0" />
+          <attvalue for="5" value="Clojure/West" />
+        </attvalues>
+      </node>
+      <node id="18807424" label="18807424">
+        <attvalues>
+          <attvalue for="0" value="2011" />
+          <attvalue for="1" value="906" />
+          <attvalue for="2" value="xocasgv" />
+          <attvalue for="3" value="476" />
+          <attvalue for="4" value="11" />
+          <attvalue for="5" value="Xaquín G.V." />
+        </attvalues>
+      </node>
+      <node id="74155968" label="74155968">
+        <attvalues>
+          <attvalue for="0" value="234" />
+          <attvalue for="1" value="101" />
+          <attvalue for="2" value="atbrox" />
+          <attvalue for="3" value="110" />
+          <attvalue for="4" value="56" />
+          <attvalue for="5" value="atbrox" />
+        </attvalues>
+      </node>
+      <node id="49820803" label="49820803">
+        <attvalues>
+          <attvalue for="0" value="2035" />
+          <attvalue for="1" value="10162" />
+          <attvalue for="2" value="aphyr" />
+          <attvalue for="3" value="125" />
+          <attvalue for="4" value="1641" />
+          <attvalue for="5" value="Aphyr" />
+        </attvalues>
+      </node>
+      <node id="14094468" label="14094468">
+        <attvalues>
+          <attvalue for="0" value="7272" />
+          <attvalue for="1" value="18495" />
+          <attvalue for="2" value="al3xandru" />
+          <attvalue for="3" value="585" />
+          <attvalue for="4" value="3478" />
+          <attvalue for="5" value="Alex Popescu" />
+        </attvalues>
+      </node>
+      <node id="24736901" label="24736901">
+        <attvalues>
+          <attvalue for="0" value="28485" />
+          <attvalue for="1" value="3129" />
+          <attvalue for="2" value="teddy777" />
+          <attvalue for="3" value="29761" />
+          <attvalue for="4" value="31" />
+          <attvalue for="5" value="Theodore Angelus" />
+        </attvalues>
+      </node>
+      <node id="6002822" label="6002822">
+        <attvalues>
+          <attvalue for="0" value="1191" />
+          <attvalue for="1" value="566" />
+          <attvalue for="2" value="atveit" />
+          <attvalue for="3" value="760" />
+          <attvalue for="4" value="7094" />
+          <attvalue for="5" value="Amund Tveit" />
+        </attvalues>
+      </node>
+      <node id="2933441" label="2933441">
+        <attvalues>
+          <attvalue for="0" value="385" />
+          <attvalue for="1" value="249" />
+          <attvalue for="2" value="kovasb" />
+          <attvalue for="3" value="356" />
+          <attvalue for="4" value="976" />
+          <attvalue for="5" value="Kovas Boguta" />
+        </attvalues>
+      </node>
+      <node id="765548" label="765548">
+        <attvalues>
+          <attvalue for="0" value="31223" />
+          <attvalue for="1" value="10662" />
+          <attvalue for="2" value="hmason" />
+          <attvalue for="3" value="981" />
+          <attvalue for="4" value="685" />
+          <attvalue for="5" value="Hilary Mason" />
+        </attvalues>
+      </node>
+      <node id="614186122" label="614186122">
+        <attvalues>
+          <attvalue for="0" value="610" />
+          <attvalue for="1" value="753" />
+          <attvalue for="2" value="nosqlrs" />
+          <attvalue for="3" value="1464" />
+          <attvalue for="4" value="3" />
+          <attvalue for="5" value="NoSQLSearch Roadshow" />
+        </attvalues>
+      </node>
+      <node id="12470412" label="12470412">
+        <attvalues>
+          <attvalue for="0" value="280" />
+          <attvalue for="1" value="2385" />
+          <attvalue for="2" value="brehaut" />
+          <attvalue for="3" value="164" />
+          <attvalue for="4" value="454" />
+          <attvalue for="5" value="Andrew Brehaut" />
+        </attvalues>
+      </node>
+      <node id="488417933" label="488417933">
+        <attvalues>
+          <attvalue for="0" value="2323" />
+          <attvalue for="1" value="5046" />
+          <attvalue for="2" value="bigdataweek" />
+          <attvalue for="3" value="498" />
+          <attvalue for="4" value="10" />
+          <attvalue for="5" value="Big Data Week" />
+        </attvalues>
+      </node>
+      <node id="1462998672" label="1462998672">
+        <attvalues>
+          <attvalue for="0" value="145" />
+          <attvalue for="1" value="1949" />
+          <attvalue for="2" value="testrunner1000" />
+          <attvalue for="3" value="541" />
+          <attvalue for="4" value="0" />
+          <attvalue for="5" value="John Barry" />
+        </attvalues>
+      </node>
+      <node id="14480530" label="14480530">
+        <attvalues>
+          <attvalue for="0" value="327" />
+          <attvalue for="1" value="638" />
+          <attvalue for="2" value="tbatchelli" />
+          <attvalue for="3" value="155" />
+          <attvalue for="4" value="5" />
+          <attvalue for="5" value="Antoni Batchelli" />
+        </attvalues>
+      </node>
+      <node id="451782803" label="451782803">
+        <attvalues>
+          <attvalue for="0" value="170" />
+          <attvalue for="1" value="319" />
+          <attvalue for="2" value="MarcoSors" />
+          <attvalue for="3" value="351" />
+          <attvalue for="4" value="20" />
+          <attvalue for="5" value="Marco Sors" />
+        </attvalues>
+      </node>
+      <node id="17765013" label="17765013">
+        <attvalues>
+          <attvalue for="0" value="15933" />
+          <attvalue for="1" value="424" />
+          <attvalue for="2" value="odersky" />
+          <attvalue for="3" value="127" />
+          <attvalue for="4" value="7" />
+          <attvalue for="5" value="Martin Odersky" />
+        </attvalues>
+      </node>
+      <node id="25997639" label="25997639">
+        <attvalues>
+          <attvalue for="0" value="10656" />
+          <attvalue for="1" value="2631" />
+          <attvalue for="2" value="pkfoot" />
+          <attvalue for="3" value="9569" />
+          <attvalue for="4" value="16" />
+          <attvalue for="5" value="PKFoot.com" />
+        </attvalues>
+      </node>
+      <node id="6186692" label="6186692">
+        <attvalues>
+          <attvalue for="0" value="15011" />
+          <attvalue for="1" value="3076" />
+          <attvalue for="2" value="pragdave" />
+          <attvalue for="3" value="51" />
+          <attvalue for="4" value="10" />
+          <attvalue for="5" value="Dave Thomas" />
+        </attvalues>
+      </node>
+      <node id="63643" label="63643">
+        <attvalues>
+          <attvalue for="0" value="309" />
+          <attvalue for="1" value="2233" />
+          <attvalue for="2" value="mpenet" />
+          <attvalue for="3" value="685" />
+          <attvalue for="4" value="66" />
+          <attvalue for="5" value="Max Penet" />
+        </attvalues>
+      </node>
+      <node id="79758113" label="79758113">
+        <attvalues>
+          <attvalue for="0" value="568052" />
+          <attvalue for="1" value="1099" />
+          <attvalue for="2" value="tonyparker" />
+          <attvalue for="3" value="44" />
+          <attvalue for="4" value="0" />
+          <attvalue for="5" value="tony Parker" />
+        </attvalues>
+      </node>
+      <node id="458647237" label="458647237">
+        <attvalues>
+          <attvalue for="0" value="5341" />
+          <attvalue for="1" value="898" />
+          <attvalue for="2" value="DataKind" />
+          <attvalue for="3" value="64" />
+          <attvalue for="4" value="142" />
+          <attvalue for="5" value="DataKind" />
+        </attvalues>
+      </node>
+      <node id="808096" label="808096">
+        <attvalues>
+          <attvalue for="0" value="2721" />
+          <attvalue for="1" value="11670" />
+          <attvalue for="2" value="seancorfield" />
+          <attvalue for="3" value="2053" />
+          <attvalue for="4" value="59" />
+          <attvalue for="5" value="Sean Corfield" />
+        </attvalues>
+      </node>
+      <node id="503649441" label="503649441">
+        <attvalues>
+          <attvalue for="0" value="77" />
+          <attvalue for="1" value="3" />
+          <attvalue for="2" value="g0rg0" />
+          <attvalue for="3" value="7" />
+          <attvalue for="4" value="4" />
+          <attvalue for="5" value="Giorgio Olivero" />
+        </attvalues>
+      </node>
+      <node id="268974242" label="268974242">
+        <attvalues>
+          <attvalue for="0" value="2056" />
+          <attvalue for="1" value="1334" />
+          <attvalue for="2" value="stevevinoski" />
+          <attvalue for="3" value="337" />
+          <attvalue for="4" value="0" />
+          <attvalue for="5" value="Steve Vinoski" />
+        </attvalues>
+      </node>
+      <node id="14375110" label="14375110">
+        <attvalues>
+          <attvalue for="0" value="5967" />
+          <attvalue for="1" value="13375" />
+          <attvalue for="2" value="fogus" />
+          <attvalue for="3" value="253" />
+          <attvalue for="4" value="18" />
+          <attvalue for="5" value="fogus" />
+        </attvalues>
+      </node>
+      <node id="13362342" label="13362342">
+        <attvalues>
+          <attvalue for="0" value="87" />
+          <attvalue for="1" value="177" />
+          <attvalue for="2" value="senya22" />
+          <attvalue for="3" value="1279" />
+          <attvalue for="4" value="32" />
+          <attvalue for="5" value="senya22" />
+        </attvalues>
+      </node>
+      <node id="16377511" label="16377511">
+        <attvalues>
+          <attvalue for="0" value="3522" />
+          <attvalue for="1" value="40148" />
+          <attvalue for="2" value="rickasaurus" />
+          <attvalue for="3" value="811" />
+          <attvalue for="4" value="780" />
+          <attvalue for="5" value="Richard Minerich" />
+        </attvalues>
+      </node>
+      <node id="549095452" label="549095452">
+        <attvalues>
+          <attvalue for="0" value="163" />
+          <attvalue for="1" value="1000" />
+          <attvalue for="2" value="Malouneh" />
+          <attvalue for="3" value="568" />
+          <attvalue for="4" value="187" />
+          <attvalue for="5" value="Malouneh" />
+        </attvalues>
+      </node>
+      <node id="12944042" label="12944042">
+        <attvalues>
+          <attvalue for="0" value="307" />
+          <attvalue for="1" value="446" />
+          <attvalue for="2" value="ivanjovanovic" />
+          <attvalue for="3" value="246" />
+          <attvalue for="4" value="36" />
+          <attvalue for="5" value="Ivan Jovanovic" />
+        </attvalues>
+      </node>
+      <node id="1838791" label="1838791">
+        <attvalues>
+          <attvalue for="0" value="972" />
+          <attvalue for="1" value="26" />
+          <attvalue for="2" value="blueshirt" />
+          <attvalue for="3" value="29" />
+          <attvalue for="4" value="0" />
+          <attvalue for="5" value="Jeremy White" />
+        </attvalues>
+      </node>
+      <node id="633182893" label="633182893">
+        <attvalues>
+          <attvalue for="0" value="634" />
+          <attvalue for="1" value="187" />
+          <attvalue for="2" value="LambdaJam" />
+          <attvalue for="3" value="0" />
+          <attvalue for="4" value="0" />
+          <attvalue for="5" value="Lambda Jam" />
+        </attvalues>
+      </node>
+      <node id="33313966" label="33313966">
+        <attvalues>
+          <attvalue for="0" value="451" />
+          <attvalue for="1" value="607" />
+          <attvalue for="2" value="goodforyourears" />
+          <attvalue for="3" value="1" />
+          <attvalue for="4" value="0" />
+          <attvalue for="5" value="bonpourlesoreilles" />
+        </attvalues>
+      </node>
+      <node id="18991645" label="18991645">
+        <attvalues>
+          <attvalue for="0" value="708" />
+          <attvalue for="1" value="7320" />
+          <attvalue for="2" value="danielglauser" />
+          <attvalue for="3" value="750" />
+          <attvalue for="4" value="760" />
+          <attvalue for="5" value="Daniel Glauser" />
+        </attvalues>
+      </node>
+      <node id="485541553" label="485541553">
+        <attvalues>
+          <attvalue for="0" value="35" />
+          <attvalue for="1" value="165" />
+          <attvalue for="2" value="dkoller82" />
+          <attvalue for="3" value="152" />
+          <attvalue for="4" value="13" />
+          <attvalue for="5" value="dkoller82" />
+        </attvalues>
+      </node>
+      <node id="46966451" label="46966451">
+        <attvalues>
+          <attvalue for="0" value="58" />
+          <attvalue for="1" value="68" />
+          <attvalue for="2" value="dgrnbrg" />
+          <attvalue for="3" value="35" />
+          <attvalue for="4" value="0" />
+          <attvalue for="5" value="David Greenberg" />
+        </attvalues>
+      </node>
+      <node id="46130870" label="46130870">
+        <attvalues>
+          <attvalue for="0" value="10019" />
+          <attvalue for="1" value="198" />
+          <attvalue for="2" value="richhickey" />
+          <attvalue for="3" value="0" />
+          <attvalue for="4" value="0" />
+          <attvalue for="5" value="Rich Hickey" />
+        </attvalues>
+      </node>
+      <node id="46957751" label="46957751">
+        <attvalues>
+          <attvalue for="0" value="7967" />
+          <attvalue for="1" value="2466" />
+          <attvalue for="2" value="nathanmarz" />
+          <attvalue for="3" value="242" />
+          <attvalue for="4" value="20" />
+          <attvalue for="5" value="Nathan Marz" />
+        </attvalues>
+      </node>
+      <node id="189913273" label="189913273">
+        <attvalues>
+          <attvalue for="0" value="33" />
+          <attvalue for="1" value="247" />
+          <attvalue for="2" value="RogerAllen" />
+          <attvalue for="3" value="83" />
+          <attvalue for="4" value="95" />
+          <attvalue for="5" value="Roger Allen" />
+        </attvalues>
+      </node>
+      <node id="18463930" label="18463930">
+        <attvalues>
+          <attvalue for="0" value="6180" />
+          <attvalue for="1" value="17886" />
+          <attvalue for="2" value="drewconway" />
+          <attvalue for="3" value="281" />
+          <attvalue for="4" value="73" />
+          <attvalue for="5" value="Drew Conway" />
+        </attvalues>
+      </node>
+      <node id="330878154" label="330878154">
+        <attvalues>
+          <attvalue for="0" value="862" />
+          <attvalue for="1" value="1882" />
+          <attvalue for="2" value="ambrosebs" />
+          <attvalue for="3" value="186" />
+          <attvalue for="4" value="110" />
+          <attvalue for="5" value="Ambrose BS" />
+        </attvalues>
+      </node>
+      <node id="28045502" label="28045502">
+        <attvalues>
+          <attvalue for="0" value="3151" />
+          <attvalue for="1" value="4094" />
+          <attvalue for="2" value="strangeloop_stl" />
+          <attvalue for="3" value="7" />
+          <attvalue for="4" value="1" />
+          <attvalue for="5" value="Strange Loop Conf" />
+        </attvalues>
+      </node>
+      <node id="189045861" label="189045861">
+        <attvalues>
+          <attvalue for="0" value="4248" />
+          <attvalue for="1" value="512" />
+          <attvalue for="2" value="ibdknox" />
+          <attvalue for="3" value="14" />
+          <attvalue for="4" value="1" />
+          <attvalue for="5" value="Chris Granger" />
+        </attvalues>
+      </node>
+      <node id="54428352" label="54428352">
+        <attvalues>
+          <attvalue for="0" value="204" />
+          <attvalue for="1" value="2529" />
+          <attvalue for="2" value="anrizal" />
+          <attvalue for="3" value="540" />
+          <attvalue for="4" value="202" />
+          <attvalue for="5" value="Anwar Rizal" />
+        </attvalues>
+      </node>
+      <node id="114761921" label="114761921">
+        <attvalues>
+          <attvalue for="0" value="223" />
+          <attvalue for="1" value="371" />
+          <attvalue for="2" value="timbaldridge" />
+          <attvalue for="3" value="113" />
+          <attvalue for="4" value="40" />
+          <attvalue for="5" value="Timothy Baldridge" />
+        </attvalues>
+      </node>
+      <node id="344923471" label="344923471">
+        <attvalues>
+          <attvalue for="0" value="491" />
+          <attvalue for="1" value="22" />
+          <attvalue for="2" value="BigDataU" />
+          <attvalue for="3" value="3" />
+          <attvalue for="4" value="0" />
+          <attvalue for="5" value="Big Data University" />
+        </attvalues>
+      </node>
+      <node id="141659077" label="141659077">
+        <attvalues>
+          <attvalue for="0" value="2483" />
+          <attvalue for="1" value="327" />
+          <attvalue for="2" value="functionaljobs" />
+          <attvalue for="3" value="529" />
+          <attvalue for="4" value="3" />
+          <attvalue for="5" value="Functional Jobs" />
+        </attvalues>
+      </node>
+      <node id="1342172868" label="1342172868">
+        <attvalues>
+          <attvalue for="0" value="1170" />
+          <attvalue for="1" value="167" />
+          <attvalue for="2" value="BigDataHunting" />
+          <attvalue for="3" value="1144" />
+          <attvalue for="4" value="0" />
+          <attvalue for="5" value="BigDataHunting" />
+        </attvalues>
+      </node>
+      <node id="7542902" label="7542902">
+        <attvalues>
+          <attvalue for="0" value="5822" />
+          <attvalue for="1" value="309" />
+          <attvalue for="2" value="cutting" />
+          <attvalue for="3" value="91" />
+          <attvalue for="4" value="41" />
+          <attvalue for="5" value="Doug Cutting" />
+        </attvalues>
+      </node>
+      <node id="14183622" label="14183622">
+        <attvalues>
+          <attvalue for="0" value="574" />
+          <attvalue for="1" value="4027" />
+          <attvalue for="2" value="pingles" />
+          <attvalue for="3" value="300" />
+          <attvalue for="4" value="166" />
+          <attvalue for="5" value="Paul Ingles" />
+        </attvalues>
+      </node>
+      <node id="4068551" label="4068551">
+        <attvalues>
+          <attvalue for="0" value="129" />
+          <attvalue for="1" value="327" />
+          <attvalue for="2" value="miner" />
+          <attvalue for="3" value="124" />
+          <attvalue for="4" value="114" />
+          <attvalue for="5" value="Steve Miner" />
+        </attvalues>
+      </node>
+      <node id="5156041" label="5156041">
+        <attvalues>
+          <attvalue for="0" value="1790" />
+          <attvalue for="1" value="1005" />
+          <attvalue for="2" value="cgrand" />
+          <attvalue for="3" value="88" />
+          <attvalue for="4" value="20" />
+          <attvalue for="5" value="Christophe Grand" />
+        </attvalues>
+      </node>
+      <node id="43186378" label="43186378">
+        <attvalues>
+          <attvalue for="0" value="3005" />
+          <attvalue for="1" value="21564" />
+          <attvalue for="2" value="CMastication" />
+          <attvalue for="3" value="2140" />
+          <attvalue for="4" value="1943" />
+          <attvalue for="5" value="JD Long" />
+        </attvalues>
+      </node>
+      <node id="91971788" label="91971788">
+        <attvalues>
+          <attvalue for="0" value="593" />
+          <attvalue for="1" value="1570" />
+          <attvalue for="2" value="GRUPOIOE" />
+          <attvalue for="3" value="1102" />
+          <attvalue for="4" value="2" />
+          <attvalue for="5" value="GRUPO IOE" />
+        </attvalues>
+      </node>
+      <node id="337766434" label="337766434">
+        <attvalues>
+          <attvalue for="0" value="5120" />
+          <attvalue for="1" value="1200" />
+          <attvalue for="2" value="ABilodeau_ski" />
+          <attvalue for="3" value="151" />
+          <attvalue for="4" value="0" />
+          <attvalue for="5" value="Alex Bilodeau" />
+        </attvalues>
+      </node>
+      <node id="14175950" label="14175950">
+        <attvalues>
+          <attvalue for="0" value="1277" />
+          <attvalue for="1" value="3342" />
+          <attvalue for="2" value="jonromero" />
+          <attvalue for="3" value="722" />
+          <attvalue for="4" value="4" />
+          <attvalue for="5" value="jonromero" />
+        </attvalues>
+      </node>
+      <node id="14209229" label="14209229">
+        <attvalues>
+          <attvalue for="0" value="3100" />
+          <attvalue for="1" value="3333" />
+          <attvalue for="2" value="jsteeleeditor" />
+          <attvalue for="3" value="799" />
+          <attvalue for="4" value="297" />
+          <attvalue for="5" value="Julie Steele" />
+        </attvalues>
+      </node>
+      <node id="206686349" label="206686349">
+        <attvalues>
+          <attvalue for="0" value="27" />
+          <attvalue for="1" value="105" />
+          <attvalue for="2" value="fabiofranchino" />
+          <attvalue for="3" value="97" />
+          <attvalue for="4" value="25" />
+          <attvalue for="5" value="Fabio Franchino" />
+        </attvalues>
+      </node>
+      <node id="326912209" label="326912209">
+        <attvalues>
+          <attvalue for="0" value="49131" />
+          <attvalue for="1" value="1665" />
+          <attvalue for="2" value="udacity" />
+          <attvalue for="3" value="220" />
+          <attvalue for="4" value="85" />
+          <attvalue for="5" value="Udacity" />
+        </attvalues>
+      </node>
+      <node id="403629267" label="403629267">
+        <attvalues>
+          <attvalue for="0" value="835" />
+          <attvalue for="1" value="112" />
+          <attvalue for="2" value="ClojureBook" />
+          <attvalue for="3" value="5" />
+          <attvalue for="4" value="0" />
+          <attvalue for="5" value="Clojure Programming" />
+        </attvalues>
+      </node>
+      <node id="5662932" label="5662932">
+        <attvalues>
+          <attvalue for="0" value="283" />
+          <attvalue for="1" value="1045" />
+          <attvalue for="2" value="mikaelhuss" />
+          <attvalue for="3" value="255" />
+          <attvalue for="4" value="3" />
+          <attvalue for="5" value="Mikael Huss" />
+        </attvalues>
+      </node>
+      <node id="863223511" label="863223511">
+        <attvalues>
+          <attvalue for="0" value="236" />
+          <attvalue for="1" value="381" />
+          <attvalue for="2" value="bib_radiofrance" />
+          <attvalue for="3" value="347" />
+          <attvalue for="4" value="13" />
+          <attvalue for="5" value="biblio Radio France" />
+        </attvalues>
+      </node>
+      <node id="13463332" label="13463332">
+        <attvalues>
+          <attvalue for="0" value="277" />
+          <attvalue for="1" value="3158" />
+          <attvalue for="2" value="soulofpeace" />
+          <attvalue for="3" value="1120" />
+          <attvalue for="4" value="566" />
+          <attvalue for="5" value="soulofpeace" />
+        </attvalues>
+      </node>
+      <node id="78189786" label="78189786">
+        <attvalues>
+          <attvalue for="0" value="631" />
+          <attvalue for="1" value="2823" />
+          <attvalue for="2" value="Quantisan" />
+          <attvalue for="3" value="169" />
+          <attvalue for="4" value="2" />
+          <attvalue for="5" value="Paul Lam" />
+        </attvalues>
+      </node>
+      <node id="19575003" label="19575003">
+        <attvalues>
+          <attvalue for="0" value="1167" />
+          <attvalue for="1" value="3717" />
+          <attvalue for="2" value="julianhyde" />
+          <attvalue for="3" value="162" />
+          <attvalue for="4" value="10" />
+          <attvalue for="5" value="Julian Hyde" />
+        </attvalues>
+      </node>
+      <node id="212141788" label="212141788">
+        <attvalues>
+          <attvalue for="0" value="275" />
+          <attvalue for="1" value="921" />
+          <attvalue for="2" value="takeoutweight" />
+          <attvalue for="3" value="342" />
+          <attvalue for="4" value="1255" />
+          <attvalue for="5" value="Nathan Sorenson" />
+        </attvalues>
+      </node>
+      <node id="562566522" label="562566522">
+        <attvalues>
+          <attvalue for="0" value="2927" />
+          <attvalue for="1" value="133" />
+          <attvalue for="2" value="stormprocessor" />
+          <attvalue for="3" value="0" />
+          <attvalue for="4" value="0" />
+          <attvalue for="5" value="Storm" />
+        </attvalues>
+      </node>
+      <node id="17486629" label="17486629">
+        <attvalues>
+          <attvalue for="0" value="195910" />
+          <attvalue for="1" value="16407" />
+          <attvalue for="2" value="Zen_Moments" />
+          <attvalue for="3" value="782" />
+          <attvalue for="4" value="43" />
+          <attvalue for="5" value="Zen Moments" />
+        </attvalues>
+      </node>
+      <node id="705082592" label="705082592">
+        <attvalues>
+          <attvalue for="0" value="528" />
+          <attvalue for="1" value="43" />
+          <attvalue for="2" value="wardnyt" />
+          <attvalue for="3" value="24" />
+          <attvalue for="4" value="0" />
+          <attvalue for="5" value="Joe Ward" />
+        </attvalues>
+      </node>
+      <node id="2955981" label="2955981">
+        <attvalues>
+          <attvalue for="0" value="173" />
+          <attvalue for="1" value="333" />
+          <attvalue for="2" value="mikera" />
+          <attvalue for="3" value="89" />
+          <attvalue for="4" value="0" />
+          <attvalue for="5" value="Mike" />
+        </attvalues>
+      </node>
+      <node id="534062307" label="534062307">
+        <attvalues>
+          <attvalue for="0" value="70" />
+          <attvalue for="1" value="153" />
+          <attvalue for="2" value="tgkristensen" />
+          <attvalue for="3" value="67" />
+          <attvalue for="4" value="5" />
+          <attvalue for="5" value="Thomas G. Kristensen" />
+        </attvalues>
+      </node>
+      <node id="19334097" label="19334097">
+        <attvalues>
+          <attvalue for="0" value="1447" />
+          <attvalue for="1" value="10132" />
+          <attvalue for="2" value="sbtourist" />
+          <attvalue for="3" value="239" />
+          <attvalue for="4" value="5404" />
+          <attvalue for="5" value="Sergio Bossa" />
+        </attvalues>
+      </node>
+      <node id="236362984" label="236362984">
+        <attvalues>
+          <attvalue for="0" value="1740" />
+          <attvalue for="1" value="1300" />
+          <attvalue for="2" value="ptaoussanis" />
+          <attvalue for="3" value="1197" />
+          <attvalue for="4" value="163" />
+          <attvalue for="5" value="Peter Taoussanis" />
+        </attvalues>
+      </node>
+      <node id="58127484" label="58127484">
+        <attvalues>
+          <attvalue for="0" value="345" />
+          <attvalue for="1" value="3084" />
+          <attvalue for="2" value="al_maisan" />
+          <attvalue for="3" value="480" />
+          <attvalue for="4" value="211" />
+          <attvalue for="5" value="Muharem Hrnjadovic" />
+        </attvalues>
+      </node>
+      <node id="8626922" label="8626922">
+        <attvalues>
+          <attvalue for="0" value="61" />
+          <attvalue for="1" value="81" />
+          <attvalue for="2" value="kingtim" />
+          <attvalue for="3" value="63" />
+          <attvalue for="4" value="5" />
+          <attvalue for="5" value="kingtim" />
+        </attvalues>
+      </node>
+      <node id="22723307" label="22723307">
+        <attvalues>
+          <attvalue for="0" value="2051" />
+          <attvalue for="1" value="14" />
+          <attvalue for="2" value="amandacox" />
+          <attvalue for="3" value="100" />
+          <attvalue for="4" value="14" />
+          <attvalue for="5" value="Amanda Cox" />
+        </attvalues>
+      </node>
+      <node id="19170542" label="19170542">
+        <attvalues>
+          <attvalue for="0" value="279" />
+          <attvalue for="1" value="1824" />
+          <attvalue for="2" value="ruflin" />
+          <attvalue for="3" value="175" />
+          <attvalue for="4" value="0" />
+          <attvalue for="5" value="Nicolas Ruflin" />
+        </attvalues>
+      </node>
+      <node id="466604271" label="466604271">
+        <attvalues>
+          <attvalue for="0" value="9" />
+          <attvalue for="1" value="8" />
+          <attvalue for="2" value="r_antares" />
+          <attvalue for="3" value="70" />
+          <attvalue for="4" value="5" />
+          <attvalue for="5" value="Ro.Corriero" />
+        </attvalues>
+      </node>
+      <node id="14066472" label="14066472">
+        <attvalues>
+          <attvalue for="0" value="1434" />
+          <attvalue for="1" value="3568" />
+          <attvalue for="2" value="pacoid" />
+          <attvalue for="3" value="1884" />
+          <attvalue for="4" value="716" />
+          <attvalue for="5" value="paco nathan" />
+        </attvalues>
+      </node>
+      <node id="318727379" label="318727379">
+        <attvalues>
+          <attvalue for="0" value="6" />
+          <attvalue for="1" value="7" />
+          <attvalue for="2" value="dryifanhu" />
+          <attvalue for="3" value="14" />
+          <attvalue for="4" value="0" />
+          <attvalue for="5" value="Yifan Hu" />
+        </attvalues>
+      </node>
+      <node id="1201430228" label="1201430228">
+        <attvalues>
+          <attvalue for="0" value="44" />
+          <attvalue for="1" value="76" />
+          <attvalue for="2" value="DeveloperProust" />
+          <attvalue for="3" value="22" />
+          <attvalue for="4" value="0" />
+          <attvalue for="5" value="Programmer Proust" />
+        </attvalues>
+      </node>
+      <node id="111723493" label="111723493">
+        <attvalues>
+          <attvalue for="0" value="3004" />
+          <attvalue for="1" value="926" />
+          <attvalue for="2" value="hadoopsummit" />
+          <attvalue for="3" value="15" />
+          <attvalue for="4" value="1" />
+          <attvalue for="5" value="Hadoop Summit" />
+        </attvalues>
+      </node>
+      <node id="356704483" label="356704483">
+        <attvalues>
+          <attvalue for="0" value="760" />
+          <attvalue for="1" value="446" />
+          <attvalue for="2" value="nosqlmatters" />
+          <attvalue for="3" value="268" />
+          <attvalue for="4" value="61" />
+          <attvalue for="5" value="NoSQL Conferences" />
+        </attvalues>
+      </node>
+      <node id="25814570" label="25814570">
+        <attvalues>
+          <attvalue for="0" value="518" />
+          <attvalue for="1" value="422" />
+          <attvalue for="2" value="noggin143" />
+          <attvalue for="3" value="485" />
+          <attvalue for="4" value="14" />
+          <attvalue for="5" value="Tim Bell" />
+        </attvalues>
+      </node>
+      <node id="16067035" label="16067035">
+        <attvalues>
+          <attvalue for="0" value="4452" />
+          <attvalue for="1" value="5113" />
+          <attvalue for="2" value="ogrisel" />
+          <attvalue for="3" value="919" />
+          <attvalue for="4" value="176" />
+          <attvalue for="5" value="Olivier Grisel" />
+        </attvalues>
+      </node>
+      <node id="16143105" label="16143105">
+        <attvalues>
+          <attvalue for="0" value="9541" />
+          <attvalue for="1" value="3261" />
+          <attvalue for="2" value="OKFN" />
+          <attvalue for="3" value="129" />
+          <attvalue for="4" value="54" />
+          <attvalue for="5" value="OKFN" />
+        </attvalues>
+      </node>
+      <node id="367089411" label="367089411">
+        <attvalues>
+          <attvalue for="0" value="3055" />
+          <attvalue for="1" value="8882" />
+          <attvalue for="2" value="moebio" />
+          <attvalue for="3" value="412" />
+          <attvalue for="4" value="428" />
+          <attvalue for="5" value="Santiago Ortiz" />
+        </attvalues>
+      </node>
+      <node id="29086980" label="29086980">
+        <attvalues>
+          <attvalue for="0" value="1385" />
+          <attvalue for="1" value="752" />
+          <attvalue for="2" value="liebke" />
+          <attvalue for="3" value="313" />
+          <attvalue for="4" value="0" />
+          <attvalue for="5" value="David Edgar Liebke" />
+        </attvalues>
+      </node>
+      <node id="14447365" label="14447365">
+        <attvalues>
+          <attvalue for="0" value="880" />
+          <attvalue for="1" value="548" />
+          <attvalue for="2" value="ztellman" />
+          <attvalue for="3" value="289" />
+          <attvalue for="4" value="2" />
+          <attvalue for="5" value="Zach Tellman" />
+        </attvalues>
+      </node>
+      <node id="26076934" label="26076934">
+        <attvalues>
+          <attvalue for="0" value="926" />
+          <attvalue for="1" value="2866" />
+          <attvalue for="2" value="mattcasters" />
+          <attvalue for="3" value="85" />
+          <attvalue for="4" value="1" />
+          <attvalue for="5" value="Matt Casters" />
+        </attvalues>
+      </node>
+      <node id="40270600" label="40270600">
+        <attvalues>
+          <attvalue for="0" value="843" />
+          <attvalue for="1" value="2082" />
+          <attvalue for="2" value="alandipert" />
+          <attvalue for="3" value="348" />
+          <attvalue for="4" value="12" />
+          <attvalue for="5" value="Alan" />
+        </attvalues>
+      </node>
+      <node id="18296585" label="18296585">
+        <attvalues>
+          <attvalue for="0" value="342" />
+          <attvalue for="1" value="88" />
+          <attvalue for="2" value="billghowe" />
+          <attvalue for="3" value="37" />
+          <attvalue for="4" value="1" />
+          <attvalue for="5" value="Bill Howe" />
+        </attvalues>
+      </node>
+      <node id="224632131" label="224632131">
+        <attvalues>
+          <attvalue for="0" value="394" />
+          <attvalue for="1" value="5177" />
+          <attvalue for="2" value="Baranosky" />
+          <attvalue for="3" value="505" />
+          <attvalue for="4" value="21" />
+          <attvalue for="5" value="Alex Baranosky" />
+        </attvalues>
+      </node>
+      <node id="318268631" label="318268631">
+        <attvalues>
+          <attvalue for="0" value="72" />
+          <attvalue for="1" value="233" />
+          <attvalue for="2" value="LauraPippinato" />
+          <attvalue for="3" value="209" />
+          <attvalue for="4" value="14" />
+          <attvalue for="5" value="Laura Pippinato" />
+        </attvalues>
+      </node>
+      <node id="31245580" label="31245580">
+        <attvalues>
+          <attvalue for="0" value="500" />
+          <attvalue for="1" value="1929" />
+          <attvalue for="2" value="kotarak" />
+          <attvalue for="3" value="75" />
+          <attvalue for="4" value="0" />
+          <attvalue for="5" value="Meikel Brandmeyer" />
+        </attvalues>
+      </node>
+      <node id="474065166" label="474065166">
+        <attvalues>
+          <attvalue for="0" value="187" />
+          <attvalue for="1" value="103" />
+          <attvalue for="2" value="GuilbautColas" />
+          <attvalue for="3" value="35" />
+          <attvalue for="4" value="0" />
+          <attvalue for="5" value="guilbaut colas" />
+        </attvalues>
+      </node>
+      <node id="394210473" label="394210473">
+        <attvalues>
+          <attvalue for="0" value="3195" />
+          <attvalue for="1" value="383" />
+          <attvalue for="2" value="EmacsRocks" />
+          <attvalue for="3" value="20" />
+          <attvalue for="4" value="37" />
+          <attvalue for="5" value="Emacs Rocks" />
+        </attvalues>
+      </node>
+      <node id="459354897" label="459354897">
+        <attvalues>
+          <attvalue for="0" value="330" />
+          <attvalue for="1" value="578" />
+          <attvalue for="2" value="MarquisPhil" />
+          <attvalue for="3" value="230" />
+          <attvalue for="4" value="18" />
+          <attvalue for="5" value="Philippe Marquis" />
+        </attvalues>
+      </node>
+      <node id="143264018" label="143264018">
+        <attvalues>
+          <attvalue for="0" value="1825" />
+          <attvalue for="1" value="9476" />
+          <attvalue for="2" value="corbett" />
+          <attvalue for="3" value="1860" />
+          <attvalue for="4" value="1965" />
+          <attvalue for="5" value="Christine Corbett" />
+        </attvalues>
+      </node>
+      <node id="104186922" label="104186922">
+        <attvalues>
+          <attvalue for="0" value="514" />
+          <attvalue for="1" value="1372" />
+          <attvalue for="2" value="ArnaudSouque" />
+          <attvalue for="3" value="753" />
+          <attvalue for="4" value="53" />
+          <attvalue for="5" value="Arnaud Souque" />
+        </attvalues>
+      </node>
+      <node id="943648532" label="943648532">
+        <attvalues>
+          <attvalue for="0" value="205" />
+          <attvalue for="1" value="92" />
+          <attvalue for="2" value="LambdaNext" />
+          <attvalue for="3" value="20" />
+          <attvalue for="4" value="6" />
+          <attvalue for="5" value="Lambda Next" />
+        </attvalues>
+      </node>
+      <node id="14344469" label="14344469">
+        <attvalues>
+          <attvalue for="0" value="12776" />
+          <attvalue for="1" value="9431" />
+          <attvalue for="2" value="peteskomoroch" />
+          <attvalue for="3" value="918" />
+          <attvalue for="4" value="1819" />
+          <attvalue for="5" value="Peter Skomoroch" />
+        </attvalues>
+      </node>
+      <node id="154774806" label="154774806">
+        <attvalues>
+          <attvalue for="0" value="21114" />
+          <attvalue for="1" value="98301" />
+          <attvalue for="2" value="Home_Cures" />
+          <attvalue for="3" value="22985" />
+          <attvalue for="4" value="0" />
+          <attvalue for="5" value="Home Remedies " />
+        </attvalues>
+      </node>
+      <node id="17267503" label="17267503">
+        <attvalues>
+          <attvalue for="0" value="1397" />
+          <attvalue for="1" value="4869" />
+          <attvalue for="2" value="78s" />
+          <attvalue for="3" value="48" />
+          <attvalue for="4" value="7" />
+          <attvalue for="5" value="78s" />
+        </attvalues>
+      </node>
+      <node id="85548506" label="85548506">
+        <attvalues>
+          <attvalue for="0" value="877" />
+          <attvalue for="1" value="1344" />
+          <attvalue for="2" value="berlinbuzzwords" />
+          <attvalue for="3" value="108" />
+          <attvalue for="4" value="149" />
+          <attvalue for="5" value="Berlin Buzzwords" />
+        </attvalues>
+      </node>
+      <node id="865120033" label="865120033">
+        <attvalues>
+          <attvalue for="0" value="108" />
+          <attvalue for="1" value="35" />
+          <attvalue for="2" value="erlio_basel" />
+          <attvalue for="3" value="351" />
+          <attvalue for="4" value="19" />
+          <attvalue for="5" value="Erlio GmbH" />
+        </attvalues>
+      </node>
+      <node id="85867810" label="85867810">
+        <attvalues>
+          <attvalue for="0" value="729" />
+          <attvalue for="1" value="950" />
+          <attvalue for="2" value="brentonashworth" />
+          <attvalue for="3" value="190" />
+          <attvalue for="4" value="481" />
+          <attvalue for="5" value="Brenton Ashworth" />
+        </attvalues>
+      </node>
+      <node id="38463707" label="38463707">
+        <attvalues>
+          <attvalue for="0" value="23112" />
+          <attvalue for="1" value="2670" />
+          <attvalue for="2" value="Skiingmag" />
+          <attvalue for="3" value="1218" />
+          <attvalue for="4" value="364" />
+          <attvalue for="5" value="Skiing Magazine" />
+        </attvalues>
+      </node>
+      <node id="703083300" label="703083300">
+        <attvalues>
+          <attvalue for="0" value="228" />
+          <attvalue for="1" value="102" />
+          <attvalue for="2" value="gotozrh" />
+          <attvalue for="3" value="652" />
+          <attvalue for="4" value="0" />
+          <attvalue for="5" value="GOTO Zürich" />
+        </attvalues>
+      </node>
+      <node id="14466341" label="14466341">
+        <attvalues>
+          <attvalue for="0" value="83" />
+          <attvalue for="1" value="961" />
+          <attvalue for="2" value="ronmiguel" />
+          <attvalue for="3" value="78" />
+          <attvalue for="4" value="0" />
+          <attvalue for="5" value="Ron Miguel" />
+        </attvalues>
+      </node>
+      <node id="78729443" label="78729443">
+        <attvalues>
+          <attvalue for="0" value="2872" />
+          <attvalue for="1" value="1157" />
+          <attvalue for="2" value="joe_hellerstein" />
+          <attvalue for="3" value="274" />
+          <attvalue for="4" value="94" />
+          <attvalue for="5" value="Joe Hellerstein" />
+        </attvalues>
+      </node>
+      <node id="132051240" label="132051240">
+        <attvalues>
+          <attvalue for="0" value="5620" />
+          <attvalue for="1" value="1895" />
+          <attvalue for="2" value="DataStax" />
+          <attvalue for="3" value="829" />
+          <attvalue for="4" value="56" />
+          <attvalue for="5" value="DataStax" />
+        </attvalues>
+      </node>
+      <node id="6586332" label="6586332">
+        <attvalues>
+          <attvalue for="0" value="5100" />
+          <attvalue for="1" value="19747" />
+          <attvalue for="2" value="djspiewak" />
+          <attvalue for="3" value="143" />
+          <attvalue for="4" value="29" />
+          <attvalue for="5" value="Daniel Spiewak" />
+        </attvalues>
+      </node>
+      <node id="465929514" label="465929514">
+        <attvalues>
+          <attvalue for="0" value="1653" />
+          <attvalue for="1" value="239" />
+          <attvalue for="2" value="datastories" />
+          <attvalue for="3" value="19" />
+          <attvalue for="4" value="104" />
+          <attvalue for="5" value="DATA STORIES podcast" />
+        </attvalues>
+      </node>
+      <node id="248756011" label="248756011">
+        <attvalues>
+          <attvalue for="0" value="766" />
+          <attvalue for="1" value="159" />
+          <attvalue for="2" value="joyofclojure" />
+          <attvalue for="3" value="9" />
+          <attvalue for="4" value="0" />
+          <attvalue for="5" value="Joy O. Clojure" />
+        </attvalues>
+      </node>
+      <node id="534785866" label="534785866">
+        <attvalues>
+          <attvalue for="0" value="165" />
+          <attvalue for="1" value="215" />
+          <attvalue for="2" value="OpenStackCH" />
+          <attvalue for="3" value="106" />
+          <attvalue for="4" value="0" />
+          <attvalue for="5" value="OpenStack CH" />
+        </attvalues>
+      </node>
+      <node id="476700973" label="476700973">
+        <attvalues>
+          <attvalue for="0" value="2651" />
+          <attvalue for="1" value="1990" />
+          <attvalue for="2" value="ds_ldn" />
+          <attvalue for="3" value="246" />
+          <attvalue for="4" value="0" />
+          <attvalue for="5" value="Data Science London" />
+        </attvalues>
+      </node>
+      <node id="363193134" label="363193134">
+        <attvalues>
+          <attvalue for="0" value="5520" />
+          <attvalue for="1" value="3041" />
+          <attvalue for="2" value="RetoCarlosSoria" />
+          <attvalue for="3" value="1014" />
+          <attvalue for="4" value="73" />
+          <attvalue for="5" value="Carlos Soria" />
+        </attvalues>
+      </node>
+      <node id="640303" label="640303">
+        <attvalues>
+          <attvalue for="0" value="478" />
+          <attvalue for="1" value="3119" />
+          <attvalue for="2" value="dizz" />
+          <attvalue for="3" value="460" />
+          <attvalue for="4" value="14" />
+          <attvalue for="5" value="Andy Edmonds" />
+        </attvalues>
+      </node>
+      <node id="356611034" label="356611034">
+        <attvalues>
+          <attvalue for="0" value="1166" />
+          <attvalue for="1" value="721" />
+          <attvalue for="2" value="MikaelKingsbury" />
+          <attvalue for="3" value="408" />
+          <attvalue for="4" value="15" />
+          <attvalue for="5" value="Mikael Kingsbury" />
+        </attvalues>
+      </node>
+      <node id="14278962" label="14278962">
+        <attvalues>
+          <attvalue for="0" value="2035" />
+          <attvalue for="1" value="4132" />
+          <attvalue for="2" value="nealrichter" />
+          <attvalue for="3" value="489" />
+          <attvalue for="4" value="10" />
+          <attvalue for="5" value="nealrichter" />
+        </attvalues>
+      </node>
+      <node id="63041755" label="63041755">
+        <attvalues>
+          <attvalue for="0" value="1848" />
+          <attvalue for="1" value="1022" />
+          <attvalue for="2" value="momentumcamps" />
+          <attvalue for="3" value="830" />
+          <attvalue for="4" value="243" />
+          <attvalue for="5" value="Momentum Ski Camps" />
+        </attvalues>
+      </node>
+      <node id="14639927" label="14639927">
+        <attvalues>
+          <attvalue for="0" value="5076" />
+          <attvalue for="1" value="141" />
+          <attvalue for="2" value="BrianGoetz" />
+          <attvalue for="3" value="78" />
+          <attvalue for="4" value="3" />
+          <attvalue for="5" value="Brian Goetz" />
+        </attvalues>
+      </node>
+      <node id="14624056" label="14624056">
+        <attvalues>
+          <attvalue for="0" value="435" />
+          <attvalue for="1" value="1228" />
+          <attvalue for="2" value="pna" />
+          <attvalue for="3" value="1062" />
+          <attvalue for="4" value="15" />
+          <attvalue for="5" value="Puria Nafisi Azizi" />
+        </attvalues>
+      </node>
+      <node id="13334762" label="13334762">
+        <attvalues>
+          <attvalue for="0" value="136249" />
+          <attvalue for="1" value="2471" />
+          <attvalue for="2" value="github" />
+          <attvalue for="3" value="144" />
+          <attvalue for="4" value="130" />
+          <attvalue for="5" value="GitHub" />
+        </attvalues>
+      </node>
+      <node id="9891642" label="9891642">
+        <attvalues>
+          <attvalue for="0" value="1807" />
+          <attvalue for="1" value="529" />
+          <attvalue for="2" value="mmcgrana" />
+          <attvalue for="3" value="883" />
+          <attvalue for="4" value="252" />
+          <attvalue for="5" value="Mark McGranaghan" />
+        </attvalues>
+      </node>
+      <node id="1152461618" label="1152461618">
+        <attvalues>
+          <attvalue for="0" value="195" />
+          <attvalue for="1" value="35" />
+          <attvalue for="2" value="miniKanren" />
+          <attvalue for="3" value="5" />
+          <attvalue for="4" value="0" />
+          <attvalue for="5" value="miniKanren.org" />
+        </attvalues>
+      </node>
+      <node id="33453372" label="33453372">
+        <attvalues>
+          <attvalue for="0" value="750" />
+          <attvalue for="1" value="66" />
+          <attvalue for="2" value="Bertrand_Meyer" />
+          <attvalue for="3" value="5" />
+          <attvalue for="4" value="0" />
+          <attvalue for="5" value="Bertrand Meyer" />
+        </attvalues>
+      </node>
+      <node id="93630781" label="93630781">
+        <attvalues>
+          <attvalue for="0" value="17165" />
+          <attvalue for="1" value="13014" />
+          <attvalue for="2" value="LeMondefr_Sport" />
+          <attvalue for="3" value="13" />
+          <attvalue for="4" value="0" />
+          <attvalue for="5" value="Le Monde.fr Sport" />
+        </attvalues>
+      </node>
+      <node id="1386426690" label="1386426690">
+        <attvalues>
+          <attvalue for="0" value="1" />
+          <attvalue for="1" value="2" />
+          <attvalue for="2" value="AdamRzepka" />
+          <attvalue for="3" value="1" />
+          <attvalue for="4" value="0" />
+          <attvalue for="5" value="Adam Rzepka" />
+        </attvalues>
+      </node>
+      <node id="146070339" label="146070339">
+        <attvalues>
+          <attvalue for="0" value="3071" />
+          <attvalue for="1" value="4374" />
+          <attvalue for="2" value="planetclojure" />
+          <attvalue for="3" value="0" />
+          <attvalue for="4" value="0" />
+          <attvalue for="5" value="Planet Clojure" />
+        </attvalues>
+      </node>
+      <node id="14839109" label="14839109">
+        <attvalues>
+          <attvalue for="0" value="14153" />
+          <attvalue for="1" value="7800" />
+          <attvalue for="2" value="dpatil" />
+          <attvalue for="3" value="824" />
+          <attvalue for="4" value="2685" />
+          <attvalue for="5" value="dj patil" />
+        </attvalues>
+      </node>
+      <node id="487390535" label="487390535">
+        <attvalues>
+          <attvalue for="0" value="1076" />
+          <attvalue for="1" value="78" />
+          <attvalue for="2" value="PhilipWadler" />
+          <attvalue for="3" value="69" />
+          <attvalue for="4" value="0" />
+          <attvalue for="5" value="Philip Wadler" />
+        </attvalues>
+      </node>
+      <node id="14986849" label="14986849">
+        <attvalues>
+          <attvalue for="0" value="2389" />
+          <attvalue for="1" value="206" />
+          <attvalue for="2" value="smolix" />
+          <attvalue for="3" value="41" />
+          <attvalue for="4" value="1" />
+          <attvalue for="5" value="Alex Smola" />
+        </attvalues>
+      </node>
+      <node id="17013577" label="17013577">
+        <attvalues>
+          <attvalue for="0" value="14793" />
+          <attvalue for="1" value="10975" />
+          <attvalue for="2" value="blprnt" />
+          <attvalue for="3" value="841" />
+          <attvalue for="4" value="405" />
+          <attvalue for="5" value="blprnt" />
+        </attvalues>
+      </node>
+      <node id="67588426" label="67588426">
+        <attvalues>
+          <attvalue for="0" value="636" />
+          <attvalue for="1" value="9138" />
+          <attvalue for="2" value="planetapache" />
+          <attvalue for="3" value="6" />
+          <attvalue for="4" value="0" />
+          <attvalue for="5" value="Planet Apache" />
+        </attvalues>
+      </node>
+      <node id="15096652" label="15096652">
+        <attvalues>
+          <attvalue for="0" value="3605" />
+          <attvalue for="1" value="6496" />
+          <attvalue for="2" value="mtnygard" />
+          <attvalue for="3" value="490" />
+          <attvalue for="4" value="17" />
+          <attvalue for="5" value="Michael Nygard" />
+        </attvalues>
+      </node>
+      <node id="19826509" label="19826509">
+        <attvalues>
+          <attvalue for="0" value="123282" />
+          <attvalue for="1" value="18327" />
+          <attvalue for="2" value="openculture" />
+          <attvalue for="3" value="571" />
+          <attvalue for="4" value="11" />
+          <attvalue for="5" value="Open Culture" />
+        </attvalues>
+      </node>
+      <node id="59735886" label="59735886">
+        <attvalues>
+          <attvalue for="0" value="273" />
+          <attvalue for="1" value="3452" />
+          <attvalue for="2" value="zerology" />
+          <attvalue for="3" value="260" />
+          <attvalue for="4" value="18274" />
+          <attvalue for="5" value="Vero X. Y. Zero" />
+        </attvalues>
+      </node>
+      <node id="73074511" label="73074511">
+        <attvalues>
+          <attvalue for="0" value="542" />
+          <attvalue for="1" value="1921" />
+          <attvalue for="2" value="pyr" />
+          <attvalue for="3" value="246" />
+          <attvalue for="4" value="29" />
+          <attvalue for="5" value="Pierre-Yves" />
+        </attvalues>
+      </node>
+      <node id="235821180" label="235821180">
+        <attvalues>
+          <attvalue for="0" value="1377" />
+          <attvalue for="1" value="1055" />
+          <attvalue for="2" value="bigmlcom" />
+          <attvalue for="3" value="14" />
+          <attvalue for="4" value="0" />
+          <attvalue for="5" value="BigML" />
+        </attvalues>
+      </node>
+      <node id="220145170" label="220145170">
+        <attvalues>
+          <attvalue for="0" value="66527" />
+          <attvalue for="1" value="2054" />
+          <attvalue for="2" value="CompSciFact" />
+          <attvalue for="3" value="13" />
+          <attvalue for="4" value="44" />
+          <attvalue for="5" value="Computer Science " />
+        </attvalues>
+      </node>
+      <node id="288500051" label="288500051">
+        <attvalues>
+          <attvalue for="0" value="16736" />
+          <attvalue for="1" value="1537" />
+          <attvalue for="2" value="hortonworks" />
+          <attvalue for="3" value="264" />
+          <attvalue for="4" value="9" />
+          <attvalue for="5" value="Hortonworks" />
+        </attvalues>
+      </node>
+      <node id="111918932" label="111918932">
+        <attvalues>
+          <attvalue for="0" value="154" />
+          <attvalue for="1" value="584" />
+          <attvalue for="2" value="davidjacot" />
+          <attvalue for="3" value="385" />
+          <attvalue for="4" value="1684" />
+          <attvalue for="5" value="David Jacot" />
+        </attvalues>
+      </node>
+      <node id="57720206" label="57720206">
+        <attvalues>
+          <attvalue for="0" value="21333" />
+          <attvalue for="1" value="1291" />
+          <attvalue for="2" value="skimagonline" />
+          <attvalue for="3" value="900" />
+          <attvalue for="4" value="84" />
+          <attvalue for="5" value="SKI Magazine" />
+        </attvalues>
+      </node>
+      <node id="75741402" label="75741402">
+        <attvalues>
+          <attvalue for="0" value="1708" />
+          <attvalue for="1" value="1099" />
+          <attvalue for="2" value="disclojure" />
+          <attvalue for="3" value="105" />
+          <attvalue for="4" value="7" />
+          <attvalue for="5" value="disclojure.org" />
+        </attvalues>
+      </node>
+      <node id="21661279" label="21661279">
+        <attvalues>
+          <attvalue for="0" value="774074" />
+          <attvalue for="1" value="10840" />
+          <attvalue for="2" value="CreativeReview" />
+          <attvalue for="3" value="7405" />
+          <attvalue for="4" value="3" />
+          <attvalue for="5" value="Creative Review" />
+        </attvalues>
+      </node>
+      <node id="123323498" label="123323498">
+        <attvalues>
+          <attvalue for="0" value="15523" />
+          <attvalue for="1" value="3508" />
+          <attvalue for="2" value="jashkenas" />
+          <attvalue for="3" value="208" />
+          <attvalue for="4" value="0" />
+          <attvalue for="5" value="Jeremy Ashkenas" />
+        </attvalues>
+      </node>
+      <node id="123701085" label="123701085">
+        <attvalues>
+          <attvalue for="0" value="157" />
+          <attvalue for="1" value="1263" />
+          <attvalue for="2" value="nilsgrunwald" />
+          <attvalue for="3" value="212" />
+          <attvalue for="4" value="47" />
+          <attvalue for="5" value="Nils Grunwald" />
+        </attvalues>
+      </node>
+      <node id="14162405" label="14162405">
+        <attvalues>
+          <attvalue for="0" value="389" />
+          <attvalue for="1" value="1600" />
+          <attvalue for="2" value="pendolare" />
+          <attvalue for="3" value="404" />
+          <attvalue for="4" value="3" />
+          <attvalue for="5" value="pendolaredigitale" />
+        </attvalues>
+      </node>
+      <node id="18936161" label="18936161">
+        <attvalues>
+          <attvalue for="0" value="923718" />
+          <attvalue for="1" value="46424" />
+          <attvalue for="2" value="lequipe" />
+          <attvalue for="3" value="872" />
+          <attvalue for="4" value="1" />
+          <attvalue for="5" value="L'ÉQUIPE" />
+        </attvalues>
+      </node>
+      <node id="104098660" label="104098660">
+        <attvalues>
+          <attvalue for="0" value="537" />
+          <attvalue for="1" value="3086" />
+          <attvalue for="2" value="ccshan" />
+          <attvalue for="3" value="303" />
+          <attvalue for="4" value="13" />
+          <attvalue for="5" value="Chung-chieh Shan" />
+        </attvalues>
+      </node>
+      <node id="158106469" label="158106469">
+        <attvalues>
+          <attvalue for="0" value="887" />
+          <attvalue for="1" value="100" />
+          <attvalue for="2" value="haldaume3" />
+          <attvalue for="3" value="130" />
+          <attvalue for="4" value="2" />
+          <attvalue for="5" value="Hal Daume III" />
+        </attvalues>
+      </node>
+      <node id="84309024" label="84309024">
+        <attvalues>
+          <attvalue for="0" value="75" />
+          <attvalue for="1" value="341" />
+          <attvalue for="2" value="magomimmo" />
+          <attvalue for="3" value="149" />
+          <attvalue for="4" value="2" />
+          <attvalue for="5" value="Mimmo Cosenza" />
+        </attvalues>
+      </node>
+      <node id="600991592" label="600991592">
+        <attvalues>
+          <attvalue for="0" value="49" />
+          <attvalue for="1" value="29" />
+          <attvalue for="2" value="BluemontLabs" />
+          <attvalue for="3" value="47" />
+          <attvalue for="4" value="2" />
+          <attvalue for="5" value="Bluemont Labs" />
+        </attvalues>
+      </node>
+      <node id="91342697" label="91342697">
+        <attvalues>
+          <attvalue for="0" value="180" />
+          <attvalue for="1" value="565" />
+          <attvalue for="2" value="chrisgugi" />
+          <attvalue for="3" value="159" />
+          <attvalue for="4" value="21" />
+          <attvalue for="5" value="Christian Gügi" />
+        </attvalues>
+      </node>
+      <node id="37010284" label="37010284">
+        <attvalues>
+          <attvalue for="0" value="1949" />
+          <attvalue for="1" value="7489" />
+          <attvalue for="2" value="abc3d" />
+          <attvalue for="3" value="1536" />
+          <attvalue for="4" value="187" />
+          <attvalue for="5" value="Francesco D'Orazio" />
+        </attvalues>
+      </node>
+      <node id="220139885" label="220139885">
+        <attvalues>
+          <attvalue for="0" value="18519" />
+          <attvalue for="1" value="1695" />
+          <attvalue for="2" value="StatFact" />
+          <attvalue for="3" value="14" />
+          <attvalue for="4" value="23" />
+          <attvalue for="5" value="Stat Fact" />
+        </attvalues>
+      </node>
+      <node id="101747568" label="101747568">
+        <attvalues>
+          <attvalue for="0" value="1126" />
+          <attvalue for="1" value="2653" />
+          <attvalue for="2" value="fisfreestyle" />
+          <attvalue for="3" value="173" />
+          <attvalue for="4" value="8" />
+          <attvalue for="5" value="fisfreestyle" />
+        </attvalues>
+      </node>
+      <node id="215395697" label="215395697">
+        <attvalues>
+          <attvalue for="0" value="387" />
+          <attvalue for="1" value="141" />
+          <attvalue for="2" value="palletops" />
+          <attvalue for="3" value="60" />
+          <attvalue for="4" value="2" />
+          <attvalue for="5" value="pallet" />
+        </attvalues>
+      </node>
+      <node id="460544490" label="460544490">
+        <attvalues>
+          <attvalue for="0" value="5296" />
+          <attvalue for="1" value="266" />
+          <attvalue for="2" value="hackerschool" />
+          <attvalue for="3" value="48" />
+          <attvalue for="4" value="11" />
+          <attvalue for="5" value="Hacker School" />
+        </attvalues>
+      </node>
+      <node id="412454773" label="412454773">
+        <attvalues>
+          <attvalue for="0" value="359" />
+          <attvalue for="1" value="512" />
+          <attvalue for="2" value="infinite_three" />
+          <attvalue for="3" value="607" />
+          <attvalue for="4" value="161" />
+          <attvalue for="5" value="The Infinite Three" />
+        </attvalues>
+      </node>
+      <node id="1819511" label="1819511">
+        <attvalues>
+          <attvalue for="0" value="3480" />
+          <attvalue for="1" value="7445" />
+          <attvalue for="2" value="swannodette" />
+          <attvalue for="3" value="296" />
+          <attvalue for="4" value="1474" />
+          <attvalue for="5" value="David Nolen" />
+        </attvalues>
+      </node>
+      <node id="16484216" label="16484216">
+        <attvalues>
+          <attvalue for="0" value="2264" />
+          <attvalue for="1" value="40558" />
+          <attvalue for="2" value="old_sound" />
+          <attvalue for="3" value="574" />
+          <attvalue for="4" value="1017" />
+          <attvalue for="5" value="Álvaro Videla" />
+        </attvalues>
+      </node>
+      <node id="1143330170" label="1143330170">
+        <attvalues>
+          <attvalue for="0" value="564" />
+          <attvalue for="1" value="38" />
+          <attvalue for="2" value="pappupass2004" />
+          <attvalue for="3" value="1994" />
+          <attvalue for="4" value="68" />
+          <attvalue for="5" value="HadoopExam.com" />
+        </attvalues>
+      </node>
+      <node id="46403451" label="46403451">
+        <attvalues>
+          <attvalue for="0" value="318296" />
+          <attvalue for="1" value="41534" />
+          <attvalue for="2" value="guardian_sport" />
+          <attvalue for="3" value="995" />
+          <attvalue for="4" value="29" />
+          <attvalue for="5" value="Guardian sport" />
+        </attvalues>
+      </node>
+      <node id="363210621" label="363210621">
+        <attvalues>
+          <attvalue for="0" value="16060" />
+          <attvalue for="1" value="924" />
+          <attvalue for="2" value="UnixToolTip" />
+          <attvalue for="3" value="14" />
+          <attvalue for="4" value="11" />
+          <attvalue for="5" value="Unix tool tip" />
+        </attvalues>
+      </node>
+      <node id="229709694" label="229709694">
+        <attvalues>
+          <attvalue for="0" value="40937" />
+          <attvalue for="1" value="7536" />
+          <attvalue for="2" value="Prismatic" />
+          <attvalue for="3" value="3169" />
+          <attvalue for="4" value="79536" />
+          <attvalue for="5" value="Prismatic" />
+        </attvalues>
+      </node>
+      <node id="22674817" label="22674817">
+        <attvalues>
+          <attvalue for="0" value="1067" />
+          <attvalue for="1" value="630" />
+          <attvalue for="2" value="benhamner" />
+          <attvalue for="3" value="369" />
+          <attvalue for="4" value="189" />
+          <attvalue for="5" value="Ben Hamner" />
+        </attvalues>
+      </node>
+      <node id="457049474" label="457049474">
+        <attvalues>
+          <attvalue for="0" value="647" />
+          <attvalue for="1" value="513" />
+          <attvalue for="2" value="EuroClojure" />
+          <attvalue for="3" value="285" />
+          <attvalue for="4" value="0" />
+          <attvalue for="5" value="EuroClojure" />
+        </attvalues>
+      </node>
+      <node id="15184260" label="15184260">
+        <attvalues>
+          <attvalue for="0" value="205" />
+          <attvalue for="1" value="630" />
+          <attvalue for="2" value="TommyVulgar" />
+          <attvalue for="3" value="71" />
+          <attvalue for="4" value="1" />
+          <attvalue for="5" value="Tom Hickey" />
+        </attvalues>
+      </node>
+      <node id="15115841" label="15115841">
+        <attvalues>
+          <attvalue for="0" value="136" />
+          <attvalue for="1" value="1741" />
+          <attvalue for="2" value="hergest" />
+          <attvalue for="3" value="375" />
+          <attvalue for="4" value="13" />
+          <attvalue for="5" value="hergest" />
+        </attvalues>
+      </node>
+      <node id="73445737" label="73445737">
+        <attvalues>
+          <attvalue for="0" value="537" />
+          <attvalue for="1" value="1257" />
+          <attvalue for="2" value="jimduey" />
+          <attvalue for="3" value="242" />
+          <attvalue for="4" value="4" />
+          <attvalue for="5" value="Jim Duey" />
+        </attvalues>
+      </node>
+      <node id="21457289" label="21457289">
+        <attvalues>
+          <attvalue for="0" value="111823" />
+          <attvalue for="1" value="1746" />
+          <attvalue for="2" value="MSFTResearch" />
+          <attvalue for="3" value="811" />
+          <attvalue for="4" value="5" />
+          <attvalue for="5" value="Microsoft Research" />
+        </attvalues>
+      </node>
+      <node id="16134540" label="16134540">
+        <attvalues>
+          <attvalue for="0" value="18564" />
+          <attvalue for="1" value="2001" />
+          <attvalue for="2" value="cloudera" />
+          <attvalue for="3" value="319" />
+          <attvalue for="4" value="34" />
+          <attvalue for="5" value="Cloudera" />
+        </attvalues>
+      </node>
+      <node id="93494670" label="93494670">
+        <attvalues>
+          <attvalue for="0" value="24150" />
+          <attvalue for="1" value="1515" />
+          <attvalue for="2" value="ProbFact" />
+          <attvalue for="3" value="13" />
+          <attvalue for="4" value="11" />
+          <attvalue for="5" value="Probability Fact" />
+        </attvalues>
+      </node>
+      <node id="16486287" label="16486287">
+        <attvalues>
+          <attvalue for="0" value="1822" />
+          <attvalue for="1" value="1634" />
+          <attvalue for="2" value="planet_lisp" />
+          <attvalue for="3" value="0" />
+          <attvalue for="4" value="0" />
+          <attvalue for="5" value="Planet Lisp" />
+        </attvalues>
+      </node>
+      <node id="6848912" label="6848912">
+        <attvalues>
+          <attvalue for="0" value="1199" />
+          <attvalue for="1" value="5015" />
+          <attvalue for="2" value="philippkueng" />
+          <attvalue for="3" value="647" />
+          <attvalue for="4" value="1433" />
+          <attvalue for="5" value="Philipp Küng" />
+        </attvalues>
+      </node>
+      <node id="291340178" label="291340178">
+        <attvalues>
+          <attvalue for="0" value="743" />
+          <attvalue for="1" value="1845" />
+          <attvalue for="2" value="s1m0nw" />
+          <attvalue for="3" value="140" />
+          <attvalue for="4" value="54" />
+          <attvalue for="5" value="Simon Willnauer" />
+        </attvalues>
+      </node>
+      <node id="46146963" label="46146963">
+        <attvalues>
+          <attvalue for="0" value="1543" />
+          <attvalue for="1" value="4280" />
+          <attvalue for="2" value="ShoKashima" />
+          <attvalue for="3" value="201" />
+          <attvalue for="4" value="13" />
+          <attvalue for="5" value="Sho Kashima" />
+        </attvalues>
+      </node>
+      <node id="21439272" label="21439272">
+        <attvalues>
+          <attvalue for="0" value="1953" />
+          <attvalue for="1" value="1916" />
+          <attvalue for="2" value="chrishouser" />
+          <attvalue for="3" value="55" />
+          <attvalue for="4" value="9" />
+          <attvalue for="5" value="Chouser" />
+        </attvalues>
+      </node>
+      <node id="408659050" label="408659050">
+        <attvalues>
+          <attvalue for="0" value="79" />
+          <attvalue for="1" value="324" />
+          <attvalue for="2" value="riviera_func" />
+          <attvalue for="3" value="28" />
+          <attvalue for="4" value="2" />
+          <attvalue for="5" value="Riviera ScalaClojure" />
+        </attvalues>
+      </node>
+      <node id="424907929" label="424907929">
+        <attvalues>
+          <attvalue for="0" value="506" />
+          <attvalue for="1" value="1628" />
+          <attvalue for="2" value="CCertainsVivent" />
+          <attvalue for="3" value="112" />
+          <attvalue for="4" value="6" />
+          <attvalue for="5" value="Comment Certains Viv" />
+        </attvalues>
+      </node>
+      <node id="3930521" label="3930521">
+        <attvalues>
+          <attvalue for="0" value="3717" />
+          <attvalue for="1" value="9169" />
+          <attvalue for="2" value="dpp" />
+          <attvalue for="3" value="191" />
+          <attvalue for="4" value="106" />
+          <attvalue for="5" value="David Pollak" />
+        </attvalues>
+      </node>
+      <node id="413596141" label="413596141">
+        <attvalues>
+          <attvalue for="0" value="59" />
+          <attvalue for="1" value="195" />
+          <attvalue for="2" value="mogulskiingnet" />
+          <attvalue for="3" value="69" />
+          <attvalue for="4" value="0" />
+          <attvalue for="5" value="MogulSkiing.Net" />
+        </attvalues>
+      </node>
+      <node id="6108572" label="6108572">
+        <attvalues>
+          <attvalue for="0" value="1696" />
+          <attvalue for="1" value="1097" />
+          <attvalue for="2" value="amitrathore" />
+          <attvalue for="3" value="1427" />
+          <attvalue for="4" value="16" />
+          <attvalue for="5" value="Amit Rathore" />
+        </attvalues>
+      </node>
+      <node id="41776029" label="41776029">
+        <attvalues>
+          <attvalue for="0" value="7674" />
+          <attvalue for="1" value="339" />
+          <attvalue for="2" value="skimagazine" />
+          <attvalue for="3" value="527" />
+          <attvalue for="4" value="13" />
+          <attvalue for="5" value="Ski Magazine" />
+        </attvalues>
+      </node>
+      <node id="14944796" label="14944796">
+        <attvalues>
+          <attvalue for="0" value="371" />
+          <attvalue for="1" value="1817" />
+          <attvalue for="2" value="jpkoenig" />
+          <attvalue for="3" value="235" />
+          <attvalue for="4" value="58" />
+          <attvalue for="5" value="jpkoenig" />
+        </attvalues>
+      </node>
+      <node id="15379361" label="15379361">
+        <attvalues>
+          <attvalue for="0" value="3977" />
+          <attvalue for="1" value="9900" />
+          <attvalue for="2" value="johnmyleswhite" />
+          <attvalue for="3" value="640" />
+          <attvalue for="4" value="214" />
+          <attvalue for="5" value="John Myles White" />
+        </attvalues>
+      </node>
+      <node id="71751586" label="71751586">
+        <attvalues>
+          <attvalue for="0" value="1736" />
+          <attvalue for="1" value="278" />
+          <attvalue for="2" value="97TEPSK" />
+          <attvalue for="3" value="0" />
+          <attvalue for="4" value="0" />
+          <attvalue for="5" value="97 Things" />
+        </attvalues>
+      </node>
+      <node id="233872539" label="233872539">
+        <attvalues>
+          <attvalue for="0" value="61" />
+          <attvalue for="1" value="562" />
+          <attvalue for="2" value="mariopastorelli" />
+          <attvalue for="3" value="142" />
+          <attvalue for="4" value="25" />
+          <attvalue for="5" value="Mario Pastorelli" />
+        </attvalues>
+      </node>
+      <node id="43196837" label="43196837">
+        <attvalues>
+          <attvalue for="0" value="1607" />
+          <attvalue for="1" value="240" />
+          <attvalue for="2" value="thinkrelevance" />
+          <attvalue for="3" value="4" />
+          <attvalue for="4" value="1" />
+          <attvalue for="5" value="Relevance" />
+        </attvalues>
+      </node>
+      <node id="45537795" label="45537795">
+        <attvalues>
+          <attvalue for="0" value="2231" />
+          <attvalue for="1" value="12323" />
+          <attvalue for="2" value="MatthieuGlzt" />
+          <attvalue for="3" value="667" />
+          <attvalue for="4" value="823" />
+          <attvalue for="5" value="Matthieu Meyer" />
+        </attvalues>
+      </node>
+      <node id="604686251" label="604686251">
+        <attvalues>
+          <attvalue for="0" value="264" />
+          <attvalue for="1" value="498" />
+          <attvalue for="2" value="bigdive_eu" />
+          <attvalue for="3" value="493" />
+          <attvalue for="4" value="1" />
+          <attvalue for="5" value="BIG DIVE" />
+        </attvalues>
+      </node>
+      <node id="295587219" label="295587219">
+        <attvalues>
+          <attvalue for="0" value="3123" />
+          <attvalue for="1" value="1102" />
+          <attvalue for="2" value="KennyElissonde" />
+          <attvalue for="3" value="85" />
+          <attvalue for="4" value="3" />
+          <attvalue for="5" value="Kenny Elissonde" />
+        </attvalues>
+      </node>
+      <node id="18806190" label="18806190">
+        <attvalues>
+          <attvalue for="0" value="480" />
+          <attvalue for="1" value="3346" />
+          <attvalue for="2" value="darevay" />
+          <attvalue for="3" value="236" />
+          <attvalue for="4" value="504" />
+          <attvalue for="5" value="Dave Ray" />
+        </attvalues>
+      </node>
+      <node id="15232432" label="15232432">
+        <attvalues>
+          <attvalue for="0" value="4499" />
+          <attvalue for="1" value="8538" />
+          <attvalue for="2" value="deanwampler" />
+          <attvalue for="3" value="664" />
+          <attvalue for="4" value="1777" />
+          <attvalue for="5" value="Dean Wampler" />
+        </attvalues>
+      </node>
+      <node id="849101" label="849101">
+        <attvalues>
+          <attvalue for="0" value="34493" />
+          <attvalue for="1" value="29042" />
+          <attvalue for="2" value="jmspool" />
+          <attvalue for="3" value="678" />
+          <attvalue for="4" value="568" />
+          <attvalue for="5" value="Jared M. Spool" />
+        </attvalues>
+      </node>
+      <node id="18174195" label="18174195">
+        <attvalues>
+          <attvalue for="0" value="1878" />
+          <attvalue for="1" value="1330" />
+          <attvalue for="2" value="joshsmithnyc" />
+          <attvalue for="3" value="143" />
+          <attvalue for="4" value="238" />
+          <attvalue for="5" value="Josh Smith" />
+        </attvalues>
+      </node>
+      <node id="169191861" label="169191861">
+        <attvalues>
+          <attvalue for="0" value="757" />
+          <attvalue for="1" value="28" />
+          <attvalue for="2" value="techupch" />
+          <attvalue for="3" value="2" />
+          <attvalue for="4" value="0" />
+          <attvalue for="5" value="techup" />
+        </attvalues>
+      </node>
+      <node id="17713078" label="17713078">
+        <attvalues>
+          <attvalue for="0" value="691" />
+          <attvalue for="1" value="5779" />
+          <attvalue for="2" value="leonardo_borges" />
+          <attvalue for="3" value="519" />
+          <attvalue for="4" value="1" />
+          <attvalue for="5" value="Leonardo Borges" />
+        </attvalues>
+      </node>
+      <node id="397987145" label="397987145">
+        <attvalues>
+          <attvalue for="0" value="129" />
+          <attvalue for="1" value="880" />
+          <attvalue for="2" value="RobStuttaford" />
+          <attvalue for="3" value="93" />
+          <attvalue for="4" value="1" />
+          <attvalue for="5" value="Robert Stuttaford" />
+        </attvalues>
+      </node>
+      <node id="382393" label="382393">
+        <attvalues>
+          <attvalue for="0" value="1163" />
+          <attvalue for="1" value="1074" />
+          <attvalue for="2" value="ciro" />
+          <attvalue for="3" value="837" />
+          <attvalue for="4" value="875" />
+          <attvalue for="5" value="Ciro Cattuto" />
+        </attvalues>
+      </node>
+      <node id="69273531" label="69273531">
+        <attvalues>
+          <attvalue for="0" value="258" />
+          <attvalue for="1" value="250" />
+          <attvalue for="2" value="DamienCassou" />
+          <attvalue for="3" value="87" />
+          <attvalue for="4" value="8" />
+          <attvalue for="5" value="Damien Cassou" />
+        </attvalues>
+      </node>
+      <node id="12464572" label="12464572">
+        <attvalues>
+          <attvalue for="0" value="2007" />
+          <attvalue for="1" value="3168" />
+          <attvalue for="2" value="JulioBarros" />
+          <attvalue for="3" value="1018" />
+          <attvalue for="4" value="7" />
+          <attvalue for="5" value="Julio Barros" />
+        </attvalues>
+      </node>
+      <node id="152862026" label="152862026">
+        <attvalues>
+          <attvalue for="0" value="27099" />
+          <attvalue for="1" value="911" />
+          <attvalue for="2" value="EdwardTufte" />
+          <attvalue for="3" value="488" />
+          <attvalue for="4" value="7" />
+          <attvalue for="5" value="Edward Tufte" />
+        </attvalues>
+      </node>
+      <node id="385013701" label="385013701">
+        <attvalues>
+          <attvalue for="0" value="380" />
+          <attvalue for="1" value="2231" />
+          <attvalue for="2" value="rastrau" />
+          <attvalue for="3" value="521" />
+          <attvalue for="4" value="448" />
+          <attvalue for="5" value="Ralph Straumann" />
+        </attvalues>
+      </node>
+      <node id="112137152" label="112137152">
+        <attvalues>
+          <attvalue for="0" value="37" />
+          <attvalue for="1" value="266" />
+          <attvalue for="2" value="jugglingbits" />
+          <attvalue for="3" value="67" />
+          <attvalue for="4" value="6" />
+          <attvalue for="5" value="Thomas Kappler" />
+        </attvalues>
+      </node>
+      <node id="1386340291" label="1386340291">
+        <attvalues>
+          <attvalue for="0" value="339" />
+          <attvalue for="1" value="34" />
+          <attvalue for="2" value="clojurecup" />
+          <attvalue for="3" value="32" />
+          <attvalue for="4" value="5" />
+          <attvalue for="5" value="Clojure Cup" />
+        </attvalues>
+      </node>
+      <node id="752673" label="752673">
+        <attvalues>
+          <attvalue for="0" value="106470" />
+          <attvalue for="1" value="4099" />
+          <attvalue for="2" value="jeresig" />
+          <attvalue for="3" value="1407" />
+          <attvalue for="4" value="83" />
+          <attvalue for="5" value="John Resig" />
+        </attvalues>
+      </node>
+      <node id="14184390" label="14184390">
+        <attvalues>
+          <attvalue for="0" value="5157" />
+          <attvalue for="1" value="1039" />
+          <attvalue for="2" value="stuarthalloway" />
+          <attvalue for="3" value="357" />
+          <attvalue for="4" value="1" />
+          <attvalue for="5" value="stuarthalloway" />
+        </attvalues>
+      </node>
+      <node id="20167623" label="20167623">
+        <attvalues>
+          <attvalue for="0" value="10900" />
+          <attvalue for="1" value="9250" />
+          <attvalue for="2" value="kdnuggets" />
+          <attvalue for="3" value="336" />
+          <attvalue for="4" value="56" />
+          <attvalue for="5" value="Gregory Piatetsky" />
+        </attvalues>
+      </node>
+      <node id="41817558" label="41817558">
+        <attvalues>
+          <attvalue for="0" value="535" />
+          <attvalue for="1" value="2867" />
+          <attvalue for="2" value="ericnormand" />
+          <attvalue for="3" value="571" />
+          <attvalue for="4" value="1" />
+          <attvalue for="5" value="Eric Normand" />
+        </attvalues>
+      </node>
+      <node id="16569802" label="16569802">
+        <attvalues>
+          <attvalue for="0" value="644" />
+          <attvalue for="1" value="970" />
+          <attvalue for="2" value="webyrd" />
+          <attvalue for="3" value="302" />
+          <attvalue for="4" value="8" />
+          <attvalue for="5" value="William Byrd" />
+        </attvalues>
+      </node>
+      <node id="15029885" label="15029885">
+        <attvalues>
+          <attvalue for="0" value="2342" />
+          <attvalue for="1" value="8787" />
+          <attvalue for="2" value="cemerick" />
+          <attvalue for="3" value="196" />
+          <attvalue for="4" value="162" />
+          <attvalue for="5" value="Chas Emerick" />
+        </attvalues>
+      </node>
+      <node id="1105783249" label="1105783249">
+        <attvalues>
+          <attvalue for="0" value="67" />
+          <attvalue for="1" value="50" />
+          <attvalue for="2" value="erikavicaretti" />
+          <attvalue for="3" value="235" />
+          <attvalue for="4" value="17" />
+          <attvalue for="5" value="Erika V" />
+        </attvalues>
+      </node>
+      <node id="519820754" label="519820754">
+        <attvalues>
+          <attvalue for="0" value="488" />
+          <attvalue for="1" value="91" />
+          <attvalue for="2" value="data_hero" />
+          <attvalue for="3" value="52" />
+          <attvalue for="4" value="4" />
+          <attvalue for="5" value="Datahero" />
+        </attvalues>
+      </node>
+      <node id="181576147" label="181576147">
+        <attvalues>
+          <attvalue for="0" value="7017" />
+          <attvalue for="1" value="2951" />
+          <attvalue for="2" value="sophia" />
+          <attvalue for="3" value="1417" />
+          <attvalue for="4" value="531" />
+          <attvalue for="5" value="Sophia.org" />
+        </attvalues>
+      </node>
+      <node id="34255829" label="34255829">
+        <attvalues>
+          <attvalue for="0" value="9640" />
+          <attvalue for="1" value="15748" />
+          <attvalue for="2" value="albertocairo" />
+          <attvalue for="3" value="1282" />
+          <attvalue for="4" value="435" />
+          <attvalue for="5" value="Alberto Cairo" />
+        </attvalues>
+      </node>
+      <node id="52716243" label="52716243">
+        <attvalues>
+          <attvalue for="0" value="2150" />
+          <attvalue for="1" value="5139" />
+          <attvalue for="2" value="Labelpop" />
+          <attvalue for="3" value="397" />
+          <attvalue for="4" value="993" />
+          <attvalue for="5" value="Vincent Théval" />
+        </attvalues>
+      </node>
+      <node id="77062104" label="77062104">
+        <attvalues>
+          <attvalue for="0" value="347" />
+          <attvalue for="1" value="130" />
+          <attvalue for="2" value="nadamin" />
+          <attvalue for="3" value="109" />
+          <attvalue for="4" value="96" />
+          <attvalue for="5" value="Nada Amin" />
+        </attvalues>
+      </node>
+      <node id="27152588" label="27152588">
+        <attvalues>
+          <attvalue for="0" value="1094" />
+          <attvalue for="1" value="1698" />
+          <attvalue for="2" value="atm" />
+          <attvalue for="3" value="366" />
+          <attvalue for="4" value="0" />
+          <attvalue for="5" value="Aaron T. Myers" />
+        </attvalues>
+      </node>
+      <node id="13772762" label="13772762">
+        <attvalues>
+          <attvalue for="0" value="477" />
+          <attvalue for="1" value="473" />
+          <attvalue for="2" value="hugoduncan" />
+          <attvalue for="3" value="116" />
+          <attvalue for="4" value="355" />
+          <attvalue for="5" value="Hugo Duncan" />
+        </attvalues>
+      </node>
+      <node id="124512591" label="124512591">
+        <attvalues>
+          <attvalue for="0" value="1834" />
+          <attvalue for="1" value="2266" />
+          <attvalue for="2" value="schignard" />
+          <attvalue for="3" value="1276" />
+          <attvalue for="4" value="4620" />
+          <attvalue for="5" value="Simon Chignard" />
+        </attvalues>
+      </node>
+      <node id="34270684" label="34270684">
+        <attvalues>
+          <attvalue for="0" value="2740" />
+          <attvalue for="1" value="7912" />
+          <attvalue for="2" value="puffnfresh" />
+          <attvalue for="3" value="1205" />
+          <attvalue for="4" value="58" />
+          <attvalue for="5" value="Brian McKenna" />
+        </attvalues>
+      </node>
+      <node id="255617445" label="255617445">
+        <attvalues>
+          <attvalue for="0" value="19413" />
+          <attvalue for="1" value="249" />
+          <attvalue for="2" value="worrydream" />
+          <attvalue for="3" value="28" />
+          <attvalue for="4" value="35" />
+          <attvalue for="5" value="Bret Victor" />
+        </attvalues>
+      </node>
+      <node id="10179552" label="10179552">
+        <attvalues>
+          <attvalue for="0" value="959" />
+          <attvalue for="1" value="17808" />
+          <attvalue for="2" value="mrb_bk" />
+          <attvalue for="3" value="429" />
+          <attvalue for="4" value="4866" />
+          <attvalue for="5" value="mrb" />
+        </attvalues>
+      </node>
+      <node id="14074371" label="14074371">
+        <attvalues>
+          <attvalue for="0" value="966" />
+          <attvalue for="1" value="2379" />
+          <attvalue for="2" value="sritchie" />
+          <attvalue for="3" value="337" />
+          <attvalue for="4" value="354" />
+          <attvalue for="5" value="Sam Ritchie" />
+        </attvalues>
+      </node>
+      <node id="465483234" label="465483234">
+        <attvalues>
+          <attvalue for="0" value="123" />
+          <attvalue for="1" value="336" />
+          <attvalue for="2" value="pschaus" />
+          <attvalue for="3" value="159" />
+          <attvalue for="4" value="9" />
+          <attvalue for="5" value="Pierre Schaus" />
+        </attvalues>
+      </node>
+      <node id="1085411" label="1085411">
+        <attvalues>
+          <attvalue for="0" value="732" />
+          <attvalue for="1" value="7811" />
+          <attvalue for="2" value="jcfischer" />
+          <attvalue for="3" value="689" />
+          <attvalue for="4" value="3379" />
+          <attvalue for="5" value="Jens-Chr. Fischer" />
+        </attvalues>
+      </node>
+      <node id="18264230" label="18264230">
+        <attvalues>
+          <attvalue for="0" value="785" />
+          <attvalue for="1" value="36" />
+          <attvalue for="2" value="rjmh" />
+          <attvalue for="3" value="64" />
+          <attvalue for="4" value="0" />
+          <attvalue for="5" value="John Hughes" />
+        </attvalues>
+      </node>
+      <node id="68652518" label="68652518">
+        <attvalues>
+          <attvalue for="0" value="122" />
+          <attvalue for="1" value="498" />
+          <attvalue for="2" value="xvinz" />
+          <attvalue for="3" value="233" />
+          <attvalue for="4" value="13" />
+          <attvalue for="5" value="Vincent Marque" />
+        </attvalues>
+      </node>
+      <node id="4071761" label="4071761">
+        <attvalues>
+          <attvalue for="0" value="3200" />
+          <attvalue for="1" value="937" />
+          <attvalue for="2" value="mericson" />
+          <attvalue for="3" value="825" />
+          <attvalue for="4" value="10" />
+          <attvalue for="5" value="Matthew Ericson" />
+        </attvalues>
+      </node>
+      <node id="369817064" label="369817064">
+        <attvalues>
+          <attvalue for="0" value="232" />
+          <attvalue for="1" value="885" />
+          <attvalue for="2" value="sebgoa" />
+          <attvalue for="3" value="200" />
+          <attvalue for="4" value="26" />
+          <attvalue for="5" value="Sebastien Goasguen" />
+        </attvalues>
+      </node>
+      <node id="29186025" label="29186025">
+        <attvalues>
+          <attvalue for="0" value="76" />
+          <attvalue for="1" value="773" />
+          <attvalue for="2" value="afamulari" />
+          <attvalue for="3" value="110" />
+          <attvalue for="4" value="0" />
+          <attvalue for="5" value="Antonino Famulari" />
+        </attvalues>
+      </node>
+      <node id="25282026" label="25282026">
+        <attvalues>
+          <attvalue for="0" value="1590" />
+          <attvalue for="1" value="3146" />
+          <attvalue for="2" value="mikedewar" />
+          <attvalue for="3" value="239" />
+          <attvalue for="4" value="5" />
+          <attvalue for="5" value="Michael Dewar" />
+        </attvalues>
+      </node>
+      <node id="14089195" label="14089195">
+        <attvalues>
+          <attvalue for="0" value="2296728" />
+          <attvalue for="1" value="24190" />
+          <attvalue for="2" value="pitchforkmedia" />
+          <attvalue for="3" value="2349" />
+          <attvalue for="4" value="19" />
+          <attvalue for="5" value="Pitchfork" />
+        </attvalues>
+      </node>
+      <node id="505721324" label="505721324">
+        <attvalues>
+          <attvalue for="0" value="95" />
+          <attvalue for="1" value="108" />
+          <attvalue for="2" value="tmwdr" />
+          <attvalue for="3" value="171" />
+          <attvalue for="4" value="21" />
+          <attvalue for="5" value="Tom Wider" />
+        </attvalues>
+      </node>
+      <node id="157741394" label="157741394">
+        <attvalues>
+          <attvalue for="0" value="53" />
+          <attvalue for="1" value="377" />
+          <attvalue for="2" value="cazorf" />
+          <attvalue for="3" value="38" />
+          <attvalue for="4" value="1" />
+          <attvalue for="5" value="François Cazor" />
+        </attvalues>
+      </node>
+      <node id="14109167" label="14109167">
+        <attvalues>
+          <attvalue for="0" value="34713" />
+          <attvalue for="1" value="7947" />
+          <attvalue for="2" value="flowingdata" />
+          <attvalue for="3" value="194" />
+          <attvalue for="4" value="716" />
+          <attvalue for="5" value="Nathan Yau" />
+        </attvalues>
+      </node>
+      <node id="114485232" label="114485232">
+        <attvalues>
+          <attvalue for="0" value="5580" />
+          <attvalue for="1" value="1495" />
+          <attvalue for="2" value="lintool" />
+          <attvalue for="3" value="224" />
+          <attvalue for="4" value="1" />
+          <attvalue for="5" value="Jimmy Lin" />
+        </attvalues>
+      </node>
+      <node id="472291315" label="472291315">
+        <attvalues>
+          <attvalue for="0" value="1152" />
+          <attvalue for="1" value="160" />
+          <attvalue for="2" value="datomic_team" />
+          <attvalue for="3" value="4" />
+          <attvalue for="4" value="0" />
+          <attvalue for="5" value="Datomic" />
+        </attvalues>
+      </node>
+      <node id="205795059" label="205795059">
+        <attvalues>
+          <attvalue for="0" value="53" />
+          <attvalue for="1" value="490" />
+          <attvalue for="2" value="OlivierBohrer" />
+          <attvalue for="3" value="227" />
+          <attvalue for="4" value="111" />
+          <attvalue for="5" value="Olivier" />
+        </attvalues>
+      </node>
+      <node id="16891384" label="16891384">
+        <attvalues>
+          <attvalue for="0" value="46436" />
+          <attvalue for="1" value="7644" />
+          <attvalue for="2" value="KentBeck" />
+          <attvalue for="3" value="222" />
+          <attvalue for="4" value="93" />
+          <attvalue for="5" value="Kent Beck" />
+        </attvalues>
+      </node>
+      <node id="1176478717" label="1176478717">
+        <attvalues>
+          <attvalue for="0" value="14" />
+          <attvalue for="1" value="20" />
+          <attvalue for="2" value="rzepkaam" />
+          <attvalue for="3" value="75" />
+          <attvalue for="4" value="168" />
+          <attvalue for="5" value="Amanda Rzepka" />
+        </attvalues>
+      </node>
+      <node id="410939902" label="410939902">
+        <attvalues>
+          <attvalue for="0" value="2923" />
+          <attvalue for="1" value="1149" />
+          <attvalue for="2" value="headinthebox" />
+          <attvalue for="3" value="0" />
+          <attvalue for="4" value="212" />
+          <attvalue for="5" value="Erik Meijer" />
+        </attvalues>
+      </node>
+      <node id="22637653" label="22637653">
+        <attvalues>
+          <attvalue for="0" value="2883" />
+          <attvalue for="1" value="4938" />
+          <attvalue for="2" value="stuartsierra" />
+          <attvalue for="3" value="288" />
+          <attvalue for="4" value="210" />
+          <attvalue for="5" value="Stuart Sierra" />
+        </attvalues>
+      </node>
+    </nodes>
+    <edges>
+      <edge id="0" source="14214153" target="881386074" />
+      <edge id="1" source="628381200" target="881386074" />
+      <edge id="2" source="273041939" target="881386074" />
+      <edge id="3" source="1387770396" target="881386074" />
+      <edge id="4" source="990647850" target="881386074" />
+      <edge id="5" source="46748716" target="881386074" />
+      <edge id="6" source="43948593" target="881386074" />
+      <edge id="7" source="1306018363" target="881386074" />
+      <edge id="8" source="161268291" target="881386074" />
+      <edge id="9" source="39231585" target="881386074" />
+      <edge id="10" source="126074955" target="881386074" />
+      <edge id="11" source="37680207" target="881386074" />
+      <edge id="12" source="150567036" target="881386074" />
+      <edge id="13" source="483979858" target="881386074" />
+      <edge id="14" source="881386074" target="43404404" />
+      <edge id="15" source="881386074" target="45537795" />
+      <edge id="16" source="881386074" target="28926980" />
+      <edge id="17" source="881386074" target="36153601" />
+      <edge id="18" source="881386074" target="14684168" />
+      <edge id="19" source="881386074" target="14214153" />
+      <edge id="20" source="881386074" target="352053266" />
+      <edge id="21" source="881386074" target="273041939" />
+      <edge id="22" source="881386074" target="6264792" />
+      <edge id="23" source="881386074" target="180379640" />
+      <edge id="24" source="881386074" target="13568022" />
+      <edge id="25" source="881386074" target="238285335" />
+      <edge id="26" source="881386074" target="48685592" />
+      <edge id="27" source="881386074" target="18160154" />
+      <edge id="28" source="881386074" target="1387770396" />
+      <edge id="29" source="881386074" target="23087133" />
+      <edge id="30" source="881386074" target="14862437" />
+      <edge id="31" source="881386074" target="84309024" />
+      <edge id="32" source="881386074" target="81581089" />
+      <edge id="33" source="881386074" target="54129186" />
+      <edge id="34" source="881386074" target="22210051" />
+      <edge id="35" source="881386074" target="13033522" />
+      <edge id="36" source="881386074" target="14066472" />
+      <edge id="37" source="881386074" target="25814570" />
+      <edge id="38" source="881386074" target="235821180" />
+      <edge id="39" source="881386074" target="534062307" />
+      <edge id="40" source="881386074" target="91333167" />
+      <edge id="41" source="881386074" target="15029885" />
+      <edge id="42" source="881386074" target="344923471" />
+      <edge id="43" source="881386074" target="16602164" />
+      <edge id="44" source="881386074" target="17242168" />
+      <edge id="45" source="881386074" target="314691129" />
+      <edge id="46" source="881386074" target="1306018363" />
+      <edge id="47" source="881386074" target="5878332" />
+      <edge id="48" source="881386074" target="14939200" />
+      <edge id="49" source="881386074" target="146629216" />
+      <edge id="50" source="881386074" target="161268291" />
+      <edge id="51" source="881386074" target="751427652" />
+      <edge id="52" source="881386074" target="14569541" />
+      <edge id="53" source="881386074" target="14986849" />
+      <edge id="54" source="881386074" target="43593" />
+      <edge id="55" source="881386074" target="126074955" />
+      <edge id="56" source="881386074" target="73074511" />
+      <edge id="57" source="881386074" target="18367054" />
+      <edge id="58" source="881386074" target="37680207" />
+      <edge id="59" source="881386074" target="483979858" />
+      <edge id="60" source="881386074" target="19310677" />
+      <edge id="61" source="881386074" target="580852153" />
+      <edge id="62" source="881386074" target="51546468" />
+      <edge id="63" source="881386074" target="716086699" />
+      <edge id="64" source="881386074" target="14447365" />
+      <edge id="65" source="881386074" target="167169119" />
+      <edge id="66" source="881386074" target="20753504" />
+      <edge id="67" source="881386074" target="732722785" />
+      <edge id="68" source="881386074" target="636003" />
+      <edge id="69" source="881386074" target="304590949" />
+      <edge id="70" source="881386074" target="39231585" />
+      <edge id="71" source="881386074" target="255617445" />
+      <edge id="72" source="881386074" target="408659050" />
+      <edge id="73" source="881386074" target="348101227" />
+      <edge id="74" source="881386074" target="765548" />
+      <edge id="75" source="881386074" target="16665197" />
+      <edge id="76" source="881386074" target="35367022" />
+      <edge id="77" source="881386074" target="315636336" />
+      <edge id="78" source="881386074" target="57027700" />
+      <edge id="79" source="881386074" target="14578294" />
+      <edge id="80" source="881386074" target="635388777" />
+      <edge id="81" source="881386074" target="156031097" />
+      <edge id="82" source="881386074" target="14706299" />
+      <edge id="83" source="881386074" target="58127484" />
+      <edge id="84" source="881386074" target="11342442" />
+      <edge id="85" source="881386074" target="392730389" />
+      <edge id="86" source="881386074" target="18807424" />
+      <edge id="87" source="881386074" target="112137152" />
+      <edge id="88" source="881386074" target="49820803" />
+      <edge id="89" source="881386074" target="14094468" />
+      <edge id="90" source="881386074" target="24736901" />
+      <edge id="91" source="881386074" target="6002822" />
+      <edge id="92" source="881386074" target="160045088" />
+      <edge id="93" source="881386074" target="15983724" />
+      <edge id="94" source="881386074" target="614186122" />
+      <edge id="95" source="881386074" target="12470412" />
+      <edge id="96" source="881386074" target="488417933" />
+      <edge id="97" source="881386074" target="14480530" />
+      <edge id="98" source="881386074" target="451782803" />
+      <edge id="99" source="881386074" target="17765013" />
+      <edge id="100" source="881386074" target="57720206" />
+      <edge id="101" source="881386074" target="1342172868" />
+      <edge id="102" source="881386074" target="233872539" />
+      <edge id="103" source="881386074" target="152862026" />
+      <edge id="104" source="881386074" target="7542902" />
+      <edge id="105" source="881386074" target="141659077" />
+      <edge id="106" source="881386074" target="808096" />
+      <edge id="107" source="881386074" target="503649441" />
+      <edge id="108" source="881386074" target="268974242" />
+      <edge id="109" source="881386074" target="14375110" />
+      <edge id="110" source="881386074" target="18264230" />
+      <edge id="111" source="881386074" target="16377511" />
+      <edge id="112" source="881386074" target="394210473" />
+      <edge id="113" source="881386074" target="12944042" />
+      <edge id="114" source="881386074" target="4068551" />
+      <edge id="115" source="881386074" target="330878154" />
+      <edge id="116" source="881386074" target="633182893" />
+      <edge id="117" source="881386074" target="33313966" />
+      <edge id="118" source="881386074" target="18991645" />
+      <edge id="119" source="881386074" target="485541553" />
+      <edge id="120" source="881386074" target="46966451" />
+      <edge id="121" source="881386074" target="752673" />
+      <edge id="122" source="881386074" target="46130870" />
+      <edge id="123" source="881386074" target="46957751" />
+      <edge id="124" source="881386074" target="189913273" />
+      <edge id="125" source="881386074" target="18463930" />
+      <edge id="126" source="881386074" target="43186378" />
+      <edge id="127" source="881386074" target="28045502" />
+      <edge id="128" source="881386074" target="189045861" />
+      <edge id="129" source="881386074" target="114761921" />
+      <edge id="130" source="881386074" target="6186692" />
+      <edge id="131" source="881386074" target="458647237" />
+      <edge id="132" source="881386074" target="14183622" />
+      <edge id="133" source="881386074" target="1838791" />
+      <edge id="134" source="881386074" target="5156041" />
+      <edge id="135" source="881386074" target="224632131" />
+      <edge id="136" source="881386074" target="27152588" />
+      <edge id="137" source="881386074" target="14209229" />
+      <edge id="138" source="881386074" target="14175950" />
+      <edge id="139" source="881386074" target="849101" />
+      <edge id="140" source="881386074" target="13772762" />
+      <edge id="141" source="881386074" target="326912209" />
+      <edge id="142" source="881386074" target="318727379" />
+      <edge id="143" source="881386074" target="1201430228" />
+      <edge id="144" source="881386074" target="863223511" />
+      <edge id="145" source="881386074" target="146070339" />
+      <edge id="146" source="881386074" target="78189786" />
+      <edge id="147" source="881386074" target="19575003" />
+      <edge id="148" source="881386074" target="212141788" />
+      <edge id="149" source="881386074" target="454676858" />
+      <edge id="150" source="881386074" target="14466341" />
+      <edge id="151" source="881386074" target="705082592" />
+      <edge id="152" source="881386074" target="2955981" />
+      <edge id="153" source="881386074" target="78729443" />
+      <edge id="154" source="881386074" target="68652518" />
+      <edge id="155" source="881386074" target="19334097" />
+      <edge id="156" source="881386074" target="236362984" />
+      <edge id="157" source="881386074" target="74806908" />
+      <edge id="158" source="881386074" target="8626922" />
+      <edge id="159" source="881386074" target="22723307" />
+      <edge id="160" source="881386074" target="19170542" />
+      <edge id="161" source="881386074" target="16665059" />
+      <edge id="162" source="881386074" target="21439272" />
+      <edge id="163" source="881386074" target="18174195" />
+      <edge id="164" source="881386074" target="38463707" />
+      <edge id="165" source="881386074" target="5662932" />
+      <edge id="166" source="881386074" target="111723493" />
+      <edge id="167" source="881386074" target="465929514" />
+      <edge id="168" source="881386074" target="16143105" />
+      <edge id="169" source="881386074" target="367089411" />
+      <edge id="170" source="881386074" target="29086980" />
+      <edge id="171" source="881386074" target="41817558" />
+      <edge id="172" source="881386074" target="26076934" />
+      <edge id="173" source="881386074" target="40270600" />
+      <edge id="174" source="881386074" target="18296585" />
+      <edge id="175" source="881386074" target="31245580" />
+      <edge id="176" source="881386074" target="474065166" />
+      <edge id="177" source="881386074" target="14278962" />
+      <edge id="178" source="881386074" target="459354897" />
+      <edge id="179" source="881386074" target="143264018" />
+      <edge id="180" source="881386074" target="14074371" />
+      <edge id="181" source="881386074" target="943648532" />
+      <edge id="182" source="881386074" target="14344469" />
+      <edge id="183" source="881386074" target="17267503" />
+      <edge id="184" source="881386074" target="53338074" />
+      <edge id="185" source="881386074" target="79758113" />
+      <edge id="186" source="881386074" target="85867810" />
+      <edge id="187" source="881386074" target="16067035" />
+      <edge id="188" source="881386074" target="703083300" />
+      <edge id="189" source="881386074" target="17486629" />
+      <edge id="190" source="881386074" target="123701085" />
+      <edge id="191" source="881386074" target="132051240" />
+      <edge id="192" source="881386074" target="6586332" />
+      <edge id="193" source="881386074" target="501968170" />
+      <edge id="194" source="881386074" target="248756011" />
+      <edge id="195" source="881386074" target="157741394" />
+      <edge id="196" source="881386074" target="476700973" />
+      <edge id="197" source="881386074" target="363193134" />
+      <edge id="198" source="881386074" target="640303" />
+      <edge id="199" source="881386074" target="356611034" />
+      <edge id="200" source="881386074" target="1152461618" />
+      <edge id="201" source="881386074" target="63041755" />
+      <edge id="202" source="881386074" target="14639927" />
+      <edge id="203" source="881386074" target="14624056" />
+      <edge id="204" source="881386074" target="13334762" />
+      <edge id="205" source="881386074" target="9891642" />
+      <edge id="206" source="881386074" target="33453372" />
+      <edge id="207" source="881386074" target="93630781" />
+      <edge id="208" source="881386074" target="1386426690" />
+      <edge id="209" source="881386074" target="337766434" />
+      <edge id="210" source="881386074" target="14839109" />
+      <edge id="211" source="881386074" target="19826509" />
+      <edge id="212" source="881386074" target="487390535" />
+      <edge id="213" source="881386074" target="17013577" />
+      <edge id="214" source="881386074" target="534785866" />
+      <edge id="215" source="881386074" target="15096652" />
+      <edge id="216" source="881386074" target="465483234" />
+      <edge id="217" source="881386074" target="59735886" />
+      <edge id="218" source="881386074" target="206686349" />
+      <edge id="219" source="881386074" target="4071761" />
+      <edge id="220" source="881386074" target="220145170" />
+      <edge id="221" source="881386074" target="288500051" />
+      <edge id="222" source="881386074" target="111918932" />
+      <edge id="223" source="881386074" target="93494670" />
+      <edge id="224" source="881386074" target="75741402" />
+      <edge id="225" source="881386074" target="21661279" />
+      <edge id="226" source="881386074" target="123323498" />
+      <edge id="227" source="881386074" target="362585949" />
+      <edge id="228" source="881386074" target="14162405" />
+      <edge id="229" source="881386074" target="18936161" />
+      <edge id="230" source="881386074" target="104098660" />
+      <edge id="231" source="881386074" target="158106469" />
+      <edge id="232" source="881386074" target="600991592" />
+      <edge id="233" source="881386074" target="91342697" />
+      <edge id="234" source="881386074" target="37010284" />
+      <edge id="235" source="881386074" target="220139885" />
+      <edge id="236" source="881386074" target="101747568" />
+      <edge id="237" source="881386074" target="215395697" />
+      <edge id="238" source="881386074" target="46146963" />
+      <edge id="239" source="881386074" target="109958517" />
+      <edge id="240" source="881386074" target="1819511" />
+      <edge id="241" source="881386074" target="16484216" />
+      <edge id="242" source="881386074" target="562566522" />
+      <edge id="243" source="881386074" target="46403451" />
+      <edge id="244" source="881386074" target="25282026" />
+      <edge id="245" source="881386074" target="229709694" />
+      <edge id="246" source="881386074" target="22674817" />
+      <edge id="247" source="881386074" target="457049474" />
+      <edge id="248" source="881386074" target="15184260" />
+      <edge id="249" source="881386074" target="21457289" />
+      <edge id="250" source="881386074" target="16134540" />
+      <edge id="251" source="881386074" target="549095452" />
+      <edge id="252" source="881386074" target="16486287" />
+      <edge id="253" source="881386074" target="6848912" />
+      <edge id="254" source="881386074" target="291340178" />
+      <edge id="255" source="881386074" target="295587219" />
+      <edge id="256" source="881386074" target="424907929" />
+      <edge id="257" source="881386074" target="3930521" />
+      <edge id="258" source="881386074" target="6108572" />
+      <edge id="259" source="881386074" target="41776029" />
+      <edge id="260" source="881386074" target="14944796" />
+      <edge id="261" source="881386074" target="241098365" />
+      <edge id="262" source="881386074" target="15379361" />
+      <edge id="263" source="881386074" target="71751586" />
+      <edge id="264" source="881386074" target="63643" />
+      <edge id="265" source="881386074" target="43196837" />
+      <edge id="266" source="881386074" target="356704483" />
+      <edge id="267" source="881386074" target="604686251" />
+      <edge id="268" source="881386074" target="18806190" />
+      <edge id="269" source="881386074" target="15232432" />
+      <edge id="270" source="881386074" target="205795059" />
+      <edge id="271" source="881386074" target="169191861" />
+      <edge id="272" source="881386074" target="17713078" />
+      <edge id="273" source="881386074" target="397987145" />
+      <edge id="274" source="881386074" target="382393" />
+      <edge id="275" source="881386074" target="69273531" />
+      <edge id="276" source="881386074" target="12464572" />
+      <edge id="277" source="881386074" target="67588426" />
+      <edge id="278" source="881386074" target="74155968" />
+      <edge id="279" source="881386074" target="1386340291" />
+      <edge id="280" source="881386074" target="385013701" />
+      <edge id="281" source="881386074" target="14184390" />
+      <edge id="282" source="881386074" target="20167623" />
+      <edge id="283" source="881386074" target="16569802" />
+      <edge id="284" source="881386074" target="46748716" />
+      <edge id="285" source="881386074" target="1105783249" />
+      <edge id="286" source="881386074" target="519820754" />
+      <edge id="287" source="881386074" target="181576147" />
+      <edge id="288" source="881386074" target="34255829" />
+      <edge id="289" source="881386074" target="52716243" />
+      <edge id="290" source="881386074" target="77062104" />
+      <edge id="291" source="881386074" target="85548506" />
+      <edge id="292" source="881386074" target="124512591" />
+      <edge id="293" source="881386074" target="34270684" />
+      <edge id="294" source="881386074" target="73445737" />
+      <edge id="295" source="881386074" target="10179552" />
+      <edge id="296" source="881386074" target="2933441" />
+      <edge id="297" source="881386074" target="25997639" />
+      <edge id="298" source="881386074" target="1085411" />
+      <edge id="299" source="881386074" target="80422885" />
+      <edge id="300" source="881386074" target="403629267" />
+      <edge id="301" source="881386074" target="363210621" />
+      <edge id="302" source="881386074" target="369817064" />
+      <edge id="303" source="881386074" target="29186025" />
+      <edge id="304" source="881386074" target="460544490" />
+      <edge id="305" source="881386074" target="14089195" />
+      <edge id="306" source="881386074" target="505721324" />
+      <edge id="307" source="881386074" target="413596141" />
+      <edge id="308" source="881386074" target="14109167" />
+      <edge id="309" source="881386074" target="114485232" />
+      <edge id="310" source="881386074" target="472291315" />
+      <edge id="311" source="881386074" target="16891384" />
+      <edge id="312" source="881386074" target="1176478717" />
+      <edge id="313" source="881386074" target="410939902" />
+      <edge id="314" source="881386074" target="22637653" />
+      <edge id="315" source="57027700" target="881386074" />
+      <edge id="316" source="339058810" target="881386074" />
+      <edge id="317" source="241098365" target="881386074" />
+      <edge id="318" source="24736901" target="881386074" />
+      <edge id="319" source="1462998672" target="881386074" />
+      <edge id="320" source="451782803" target="881386074" />
+      <edge id="321" source="25997639" target="881386074" />
+      <edge id="322" source="63643" target="881386074" />
+      <edge id="323" source="13362342" target="881386074" />
+      <edge id="324" source="12944042" target="881386074" />
+      <edge id="325" source="189913273" target="881386074" />
+      <edge id="326" source="54428352" target="881386074" />
+      <edge id="327" source="1342172868" target="881386074" />
+      <edge id="328" source="5156041" target="881386074" />
+      <edge id="329" source="91971788" target="881386074" />
+      <edge id="330" source="5662932" target="881386074" />
+      <edge id="331" source="13463332" target="881386074" />
+      <edge id="332" source="534062307" target="881386074" />
+      <edge id="333" source="58127484" target="881386074" />
+      <edge id="334" source="466604271" target="881386074" />
+      <edge id="335" source="14066472" target="881386074" />
+      <edge id="336" source="40270600" target="881386074" />
+      <edge id="337" source="318268631" target="881386074" />
+      <edge id="338" source="104186922" target="881386074" />
+      <edge id="339" source="154774806" target="881386074" />
+      <edge id="340" source="865120033" target="881386074" />
+      <edge id="341" source="703083300" target="881386074" />
+      <edge id="342" source="14466341" target="881386074" />
+      <edge id="343" source="640303" target="881386074" />
+      <edge id="344" source="1386426690" target="881386074" />
+      <edge id="345" source="59735886" target="881386074" />
+      <edge id="346" source="73074511" target="881386074" />
+      <edge id="347" source="111918932" target="881386074" />
+      <edge id="348" source="14162405" target="881386074" />
+      <edge id="349" source="412454773" target="881386074" />
+      <edge id="350" source="16484216" target="881386074" />
+      <edge id="351" source="1143330170" target="881386074" />
+      <edge id="352" source="229709694" target="881386074" />
+      <edge id="353" source="15115841" target="881386074" />
+      <edge id="354" source="6848912" target="881386074" />
+      <edge id="355" source="233872539" target="881386074" />
+      <edge id="356" source="17713078" target="881386074" />
+      <edge id="357" source="12464572" target="881386074" />
+      <edge id="358" source="112137152" target="881386074" />
+      <edge id="359" source="41817558" target="881386074" />
+      <edge id="360" source="1105783249" target="881386074" />
+      <edge id="361" source="13772762" target="881386074" />
+      <edge id="362" source="1085411" target="881386074" />
+      <edge id="363" source="68652518" target="881386074" />
+      <edge id="364" source="29186025" target="881386074" />
+      <edge id="365" source="205795059" target="881386074" />
+      <edge id="366" source="1176478717" target="881386074" />
+    </edges>
+  </graph>
+</gexf>
