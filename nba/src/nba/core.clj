@@ -4,13 +4,8 @@
              [cascalog.tap :as ct]
              [cascalog.more-taps :as cmt]
              [clojure.string :as s]
+             [clojure.data.json :as json]
              [clojure-csv.core :as csv]))
-
-(defn print-file
-  "Use cascalog to print a file"
-  [file-path]
-  (let [file-tap (ca/lfs-textline file-path)]
-    (ca/?<- (ca/stdout) [?line] (file-tap :> ?line))))
 
 (defn parse-psv
   "Parse pipe-separated line"  
@@ -21,8 +16,7 @@
   "reads string and splits it by regex"
   (s/split line #"[;,\s]+"))
 
-
-;;Extract from json tweets the following tweets :
+;; Extract from json tweets the following tweets :
 ;;   - extract id , lang , text , hastag, mention
 ;;   - cleanup text field : replace \n and | to other characters
 ;;   - ??howto?? extract first line and extract keywords used for the search
@@ -31,19 +25,32 @@
 ;;   - remove stopwords, punctuation , hyperlinks --> new field terms
 
 (defn etf-tweet
-  [in out & {:keys [delimiter trap] :or {delimiter \| trap "error"} :as opts}]
-  (ca/<- [?doc-id ?word]
-      (in ?doc-id ?line)
-      (split ?line :> ?word-dirty)
-      ((co/comp s/trim s/lower-case) ?word-dirty :> ?word)
-      #_(stop ?word :> false))
-)
+  [dir out & {:keys [delimiter trap] :or {delimiter \| trap "error"} :as opts}]
+  (ca/<- [?tweet]
+      ((ca/lfs-textline dir) ?line)
+      (json/read-str ?line :key-fn keyword :> ?tweet)
+      (:trap (ca/lfs-textline trap))))
 
-(defn word-count [src]
-  "simple word count across all documents"
-  (ca/<- [?word ?count]
-      (src _ ?word)
-      (co/count ?count)))
+;; Some Stats :
+;;   - terms frequency --> find relevant terms in this context (game, win, heat)
+;;   - most found search keywords
+;;   - most used hashtags
+;;   - most used entities
+;;   - compute TD-IDF
+;; Goal : from stats determine manually most relevant terms and classify them
+;;   - classes : spurs , miamiheat , both , none , positive , neutral , negative
+;;
+(defn most-frequent-terms
+  [in out & {:keys [delimiter trap] :or {delimiter \| trap "error"} :as opts}]
+  (let [count-q (ca/<- [?term ?count]         
+          (co/count ?count)
+          (split ?terms :> ?term)         
+          (parse-psv ?line :> ?id ?lang ?text ?hashtag ?mention ?terms ?searchkeys)
+          ((ca/lfs-textline in) ?line)   
+          (:trap (ca/lfs-textline trap)))
+        q (co/first-n count-q 20 :sort ["?count"] :reverse true)]
+    (ca/??- q)))
+
 
 ;; TD-IDF as it is in Cascalog for the impatient
 ;; https://github.com/Quantisan/Impatient/blob/cascalog/part6/src/impatient/core.clj
@@ -76,27 +83,6 @@
         ((TF src) ?doc-id ?tf-word ?tf-count)
         ((DF src) ?tf-word ?df-count)
         (tf-idf-formula ?tf-count ?df-count n-doc :> ?tf-idf))))
-
-
-;; Some Stats :
-;;   - terms frequency --> find relevant terms in this context (game, win, heat)
-;;   - most found search keywords
-;;   - most used hashtags
-;;   - most used entities
-;;   - compute TD-IDF
-;; Goal : from stats determine manually most relevant terms and classify them
-;;   - classes : spurs , miamiheat , both , none , positive , neutral , negative
-;;
-(defn most-frequent-terms
-  [in out & {:keys [delimiter trap] :or {delimiter \| trap "error"} :as opts}]
-  (let [count-q (ca/<- [?term ?count]         
-          (co/count ?count)
-          (split ?terms :> ?term)         
-          (parse-psv ?line :> ?id ?lang ?text ?hashtag ?mention ?terms ?searchkeys)
-          ((ca/lfs-textline in) ?line)   
-          (:trap (ca/lfs-textline trap)))
-        q (co/first-n count-q 20 :sort ["?count"] :reverse true)]
-    (ca/??- q)))
 
 ;; Some Analysis (only on english tweet ? ) :
 ;;   - unsupervised clustering based on TD-IDF

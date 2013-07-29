@@ -16,7 +16,7 @@
                  ;[cascalog/cascalog-checkpoint "1.10.2-SNAPSHOT"]
                  [clojure-csv/clojure-csv "2.0.0-alpha2"]
                  ;[org.clojars.sunng/geohash "1.0.1"]
-                 [org.clojure/data.json "0.2.1"]
+                 [org.clojure/data.json "0.2.2"]
                  [date-clj "1.0.1"]]
   :exclusions [org.apache.hadoop/hadoop-core
                org.clojure/clojure]
