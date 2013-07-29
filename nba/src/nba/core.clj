@@ -12,6 +12,9 @@
   [line]
   (first (csv/parse-csv line :delimiter \|)))
 
+(defn parse-json [line]
+  (json/read-str line :key-fn keyword))
+
 (ca/defmapcatop split [line]
   "reads string and splits it by regex"
   (s/split line #"[;,\s]+"))
@@ -24,12 +27,36 @@
 ;;   - language detection --> new field reallang
 ;;   - remove stopwords, punctuation , hyperlinks --> new field terms
 
+;; High-order function
+#_(ca/defmapop [extractor [rules]] [value]
+  (map (fn [rule] (get-in value rule)) rules))
+
+#_((extractor [[:id] [:lang] [:text]
+                      [:entities :hashtags]
+                      [:entities :user_mentions]])
+          ?tweet
+          :> ?id ?lang ?text ?hashtags ?mentions)
+
+(defn build-extract-join [ks f]
+  (fn [m]
+    (s/join " " (map f (get-in m ks)))))
+
+;; Fct that returns a fct 
+
+(defn extractor [tweet]
+  ((juxt :id :lang :text
+         (build-extract-join [:entities :hashtags] :text)
+         (build-extract-join [:entities :user_mentions] :screen_name))
+   tweet))
+
 (defn etf-tweet
   [dir out & {:keys [delimiter trap] :or {delimiter \| trap "error"} :as opts}]
-  (ca/<- [?tweet]
-      ((ca/lfs-textline dir) ?line)
-      (json/read-str ?line :key-fn keyword :> ?tweet)
-      (:trap (ca/lfs-textline trap))))
+  (ca/<- [?id ?lang ?text ?hashtags ?mentions]
+         (extractor ?tweet :> ?id ?lang ?text ?hashtags ?mentions)
+         ((ca/lfs-textline dir) ?line)
+         ;; TODO  extract header to extract search keywords used how?         
+         (parse-json ?line :> ?tweet)
+         (:trap (ca/lfs-textline trap))))
 
 ;; Some Stats :
 ;;   - terms frequency --> find relevant terms in this context (game, win, heat)
