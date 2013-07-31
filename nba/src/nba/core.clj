@@ -85,31 +85,48 @@ Naive answer : any string containing only a given set of characters
 
 ;; query to find keywords in terms
 ;; keywords are coming from file
-
 (defn build-extract-join
   "Returns a function on maps : get-in _ ks + map f _ + join sep _"
-  ([ks] (build-extract-join ks identity " "))
-  ([ks f] (build-extract-join ks f " "))
-  ([ks f sep]
+  ([ks] (build-extract-join ks identity))
+  ([ks f]
      (fn [m]
-       (s/join sep (map f (get-in m ks))))))
+       (map f (get-in m ks)))))
 
-;; Extract from json tweets the following tweets :
-;;   - extract id , lang , text , hastag, mention
-(defn extractor [tweet]
+(defn split-tweet
+  "Plain fct to split text by space , clean terms and remove hyperlinks"
+  [t]
+  (keep (fn [w] (let [w (scrub-text w)]
+                 (when-not (hyperlink? w) w)))
+      (s/split t #"[\s]+")))
+
+(defn extractor
+  "Extract from json tweets the following tweets :
+     - extract id , lang , text , hastags, mentions
+     - convert text into terms
+"
+  [tweet]
   ((juxt :id :lang :text
          (build-extract-join [:entities :hashtags] :text)
-         (build-extract-join [:entities :user_mentions] :screen_name))
+         (build-extract-join [:entities :user_mentions] :screen_name)
+         (comp split-tweet :text))
    tweet))
 
-(defn etf-tweet
-  [dir out & {:keys [delimiter trap] :or {delimiter \| trap "error"} :as opts}]
-  (ca/<- [?id ?lang ?text ?hashtags ?mentions]
-         (extractor ?tweet :> ?id ?lang ?text ?hashtags ?mentions)
+(defn etl-tweet
+  [dir & {:keys [delimiter trap] :or {delimiter \| trap "error"} :as opts}]
+  (ca/<- [?id ?lang ?text ?hashtags ?mentions ?terms]
+         (extractor ?tweet :> ?id ?lang ?text ?hashtags ?mentions ?terms)
          ((ca/lfs-textline dir) ?line)
          ;; TODO  extract header to extract search keywords used how?         
          (parse-json ?line :> ?tweet)
          (:trap (ca/lfs-textline trap))))
+
+(defn terms [in]
+  (ca/<- [?id ?term]
+         (hyperlink? ?term :> false)
+         (scrub-text ?word :> ?term)
+         ;;TODO add word split for ascii emoticon
+         (split ?text :> ?word)
+         (in :> ?id ?lang ?text ?hashtags ?mentions)))
 
 ;; Some Stats :
 ;;   - terms frequency --> find relevant terms in this context (game, win, heat)
