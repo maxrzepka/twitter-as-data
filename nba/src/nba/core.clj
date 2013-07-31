@@ -2,6 +2,7 @@
   (:require  [cascalog.api :as ca]
              [cascalog.ops :as co]
              [cascalog.tap :as ct]
+             [cascalog.checkpoint :as cc]
              [cascalog.more-taps :as cmt]
              [clojure.string :as s]
              [clojure.data.json :as json]
@@ -120,14 +121,6 @@ Naive answer : any string containing only a given set of characters
          (parse-json ?line :> ?tweet)
          (:trap (ca/lfs-textline trap))))
 
-(defn terms [in]
-  (ca/<- [?id ?term]
-         (hyperlink? ?term :> false)
-         (scrub-text ?word :> ?term)
-         ;;TODO add word split for ascii emoticon
-         (split ?text :> ?word)
-         (in :> ?id ?lang ?text ?hashtags ?mentions)))
-
 ;; Some Stats :
 ;;   - terms frequency --> find relevant terms in this context (game, win, heat)
 ;;   - most found search keywords
@@ -137,13 +130,15 @@ Naive answer : any string containing only a given set of characters
 ;; Goal : from stats determine manually most relevant terms and classify them
 ;;   - classes : spurs , miamiheat , both , none , positive , neutral , negative
 ;;
+
+(ca/defmapcatop list1 [coll] (seq coll))
 (defn most-frequent-terms
-  [in out & {:keys [delimiter trap] :or {delimiter \| trap "error"} :as opts}]
+  "Depends on etl-tweet"
+  [in & {:keys [delimiter trap] :or {delimiter \| trap "error"} :as opts}]
   (let [count-q (ca/<- [?term ?count]         
           (co/count ?count)
-          (split ?terms :> ?term)         
-          (parse-psv ?line :> ?id ?lang ?text ?hashtag ?mention ?terms ?searchkeys)
-          ((ca/lfs-textline in) ?line)   
+          (list1 ?terms :> ?term)         
+          (in :> ?id ?lang ?text ?hashtag ?mention ?terms)
           (:trap (ca/lfs-textline trap)))
         q (co/first-n count-q 20 :sort ["?count"] :reverse true)]
     (ca/??- q)))
