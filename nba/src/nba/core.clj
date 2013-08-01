@@ -1,9 +1,9 @@
 (ns nba.core
   (:require  [cascalog.api :as ca]
              [cascalog.ops :as co]
-             [cascalog.tap :as ct]
-             [cascalog.checkpoint :as cc]
-             [cascalog.more-taps :as cmt]
+             ;[cascalog.tap :as ct]
+             ;[cascalog.checkpoint :as cc]
+             ;[cascalog.more-taps :as cmt]
              [clojure.string :as s]
              [clojure.data.json :as json]
              [clojure-csv.core :as csv]))
@@ -22,7 +22,7 @@
 
 (def punctuation "[](){}:;?!\",. \t\r\n")
 (def punc-regexp #"[\[\]\(\)\{\}:?!;,\s]+")
-;; 
+ 
 (ca/defmapcatop split-by-punc [text]
   "split text by any kind of punctuation"
   (s/split text punc-regexp))
@@ -31,14 +31,12 @@
   (apply str
          (filter (comp not (set punctuation)) s)))
 
-;;TODO handle case where emoticon juxt word like "interesting:)"
-;; possible trim-split logic : 
-;;   
 (defn scrub-text [s]
   "trim open punctuation and lower case"
   ((comp delete-punct s/lower-case) s))
 
-;; detect unicode string ,clean and convert it to meaning
+;; Detect unicode string ,clean and convert it into meaning
+;; TODO handle case where emoticon juxt word like "interesting:)"
 ;;   - http://rishida.net/tools/conversion/ app to test unicode strings
 ;; TODO get full list of unicode pictographs...
 ;;   - unicode databases
@@ -86,8 +84,9 @@ Naive answer : any string containing only a given set of characters
 
 ;; query to find keywords in terms
 ;; keywords are coming from file
+
 (defn build-extract-join
-  "Returns a function on maps : get-in _ ks + map f _ + join sep _"
+  "Returns a function on maps : get-in _ ks + map f _"
   ([ks] (build-extract-join ks identity))
   ([ks f]
      (fn [m]
@@ -98,7 +97,7 @@ Naive answer : any string containing only a given set of characters
   [t]
   (keep (fn [w] (let [w (scrub-text w)]
                  (when-not (hyperlink? w) w)))
-      (s/split t #"[\s]+")))
+        (s/split t #"[\s]+")))
 
 (defn extractor
   "Extract from json tweets the following tweets :
@@ -132,8 +131,9 @@ Naive answer : any string containing only a given set of characters
 ;;
 
 (ca/defmapcatop list1 [coll] (seq coll))
+; (most-frequent-terms (etl-tweet "data/test/"))
 (defn most-frequent-terms
-  "Depends on etl-tweet"
+  "Depends on etl-tweet "
   [in & {:keys [delimiter trap] :or {delimiter \| trap "error"} :as opts}]
   (let [count-q (ca/<- [?term ?count]         
           (co/count ?count)
@@ -181,3 +181,12 @@ Naive answer : any string containing only a given set of characters
 ;;   - sentiment analysis on tweet
 ;;   - based on terms classes, perform clustering
 ;;   - supervised classification ( spurs , heat , neutral , both)
+
+
+;; Main Function
+(defn -main [in searchkeys stop trap]
+  (let [tweet-stage "data/out/tweet"]
+    (ca/?- "ETL tweet data"
+        (ca/lfs-seqfile tweet-stage)
+        (etl-tweet in :trap (str trap "/tweet")))
+    ))
