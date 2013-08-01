@@ -1,7 +1,7 @@
-* Tweet Anaylsis During NBA Finals 2013
-** Data Anaylsis With Cascalog
-
+* Tweet Analysis During NBA Finals 2013
+** Data Analysis With Cascalog
 ** Usage
+Execute the complete data workflow :
 #+BEGIN_SRC clojure
-lein run data/test/game7.test.txt data/test/game7.keywords.txt data/en.stop data/test/error
+lein run data/test/game7.test.txt data/test/out data/test/game7.keywords.txt data/en.stop data/test/error
 #+END_SRC

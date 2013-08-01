@@ -3,7 +3,7 @@
              [cascalog.ops :as co]
              ;[cascalog.tap :as ct]
              ;[cascalog.checkpoint :as cc]
-             ;[cascalog.more-taps :as cmt]
+             [cascalog.more-taps :as cmt]
              [clojure.string :as s]
              [clojure.data.json :as json]
              [clojure-csv.core :as csv]))
@@ -131,50 +131,61 @@ Naive answer : any string containing only a given set of characters
 ;;
 
 (ca/defmapcatop list1 [coll] (seq coll))
-; (most-frequent-terms (etl-tweet "data/test/"))
-(defn most-frequent-terms
-  "Depends on etl-tweet "
-  [in & {:keys [delimiter trap] :or {delimiter \| trap "error"} :as opts}]
-  (let [count-q (ca/<- [?term ?count]         
-          (co/count ?count)
+
+(defn terms
+  "Source of all terms by tweet : in = output of etl-tweet"
+  [in]
+  (ca/<- [?id ?term]         
           (list1 ?terms :> ?term)         
-          (in :> ?id ?lang ?text ?hashtag ?mention ?terms)
-          (:trap (ca/lfs-textline trap)))
+          (in :> ?id ?lang ?text ?hashtag ?mention ?terms)))
+
+(defn terms-frequency
+  "in = output of etl-tweet"
+  [in]
+  (ca/<- [?term ?count]         
+         (co/count ?count)
+         ((terms in) ?id ?term)))
+
+; (most-frequent-terms (etl-tweet "data/test/"))
+(defn top20-most-frequent-terms
+  "Depends on etl-tweet "
+  [in]
+  (let [count-q (terms-frequency in)
         q (co/first-n count-q 20 :sort ["?count"] :reverse true)]
     (ca/??- q)))
 
 
-;; TD-IDF as it is in Cascalog for the impatient
+;; TD-IDF from Cascalog for the impatient adapted to tweets (just renaming)
 ;; https://github.com/Quantisan/Impatient/blob/cascalog/part6/src/impatient/core.clj
 
-#_(defn D [src]
-  (let [src  (select-fields src ["?doc-id"])]
-    (<- [?n-docs]
-        (src ?doc-id)
-        (c/distinct-count ?doc-id :> ?n-docs))))
+(defn D [src]
+  (let [src  (ca/select-fields src ["?id"])]
+    (ca/<- [?n-tweets]
+        (src ?tweet-id)
+        (co/distinct-count ?tweet-id :> ?n-tweets))))
 
-#_(defn DF [src]
-  (<- [?df-word ?df-count]
-      (src ?doc-id ?df-word)
-      (c/distinct-count ?doc-id ?df-word :> ?df-count)))
+(defn DF [src]
+  (ca/<- [?df-term ?df-count]
+      (src ?tweet-id ?df-term)
+      (co/distinct-count ?tweet-id ?df-term :> ?df-count)))
 
-#_(defn TF [src]
-  (<- [?doc-id ?tf-word ?tf-count]
-      (src ?doc-id ?tf-word)
-      (c/count ?tf-count)))
+(defn TF [src]
+  (ca/<- [?tweet-id ?tf-term ?tf-count]
+      (src ?tweet-id ?tf-term)
+      (co/count ?tf-count)))
 
-(defn tf-idf-formula [tf-count df-count n-docs]
+(defn tf-idf-formula [tf-count df-count n-tweets]
   (->> (+ 1.0 df-count)
-    (ca/div n-docs)
+    (ca/div n-tweets)
     (Math/log)
     (* tf-count)))
 
-#_(defn TF-IDF [src]
-  (let [n-doc (first (flatten (??- (D src))))]
-    (<- [?doc-id ?tf-idf ?tf-word]
-        ((TF src) ?doc-id ?tf-word ?tf-count)
-        ((DF src) ?tf-word ?df-count)
-        (tf-idf-formula ?tf-count ?df-count n-doc :> ?tf-idf))))
+(defn TF-IDF [src]
+  (let [n-tweet (first (flatten (ca/??- (D src))))]
+    (ca/<- [?tweet-id ?tf-idf ?tf-term]
+        ((TF src) ?tweet-id ?tf-term ?tf-count)
+        ((DF src) ?tf-term ?df-count)
+        (tf-idf-formula ?tf-count ?df-count n-tweet :> ?tf-idf))))
 
 ;; Some Analysis (only on english tweet ? ) :
 ;;   - unsupervised clustering based on TD-IDF
@@ -184,9 +195,12 @@ Naive answer : any string containing only a given set of characters
 
 
 ;; Main Function
-(defn -main [in searchkeys stop trap]
+(defn -main [in out searchkeys stop trap]
   (let [tweet-stage "data/out/tweet"]
     (ca/?- "ETL tweet data"
         (ca/lfs-seqfile tweet-stage)
         (etl-tweet in :trap (str trap "/tweet")))
+    (ca/?- "Terms Frequency"
+           (cmt/lfs-delimited out)
+           (TF-IDF (terms (ca/lfs-seqfile tweet-stage))))
     ))
