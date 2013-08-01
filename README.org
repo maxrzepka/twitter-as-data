@@ -1,0 +1,121 @@
+* Twitter
+** NBA
+*** Synopsis
+    - Grabbing the most tweets as possible during the 2 last NBA finals games.
+    - Localize them, do some basic group 
+    - Detect if a tweet is supporting Spurs, Heat or simply neutral
+    - Does supporting trends are highly correlated to the game score ?
+*** Grab stream
+Python script using tweepy was manually started/monitored
+
+Possible Enhancement : automatic and fault-tolerant workflow 
+*** MapReduce to generate stats
+Several output format
+    - tweetid , full time , hour , minute , second
+    - tweetid , region , long ,lat
+    - tweetid , lang , [computed lang ,] text
+    - tweetid , userid ,name, some stats
+    - tweetid , mentions,hasttags, keywords
+
+Following Kimball's start schema it gives :
+    - Dimensions : region , time (day,hour,minute) , userid
+    - Measures : # tweet , # mentions , # hasttags 
+**** TODO organize MrJob code
+**** TODO Write mapReduce jobs : splitter and then grouping
+
+*** Vizualization
+**** TODO Convert long,lat --> region given a json map
+**** TODO real-time heatmap during match
+**** TODO Simple exploratory visualization to detect anomalies
+*** Data Analysis
+**** TODO Grab scores over time and compare with tweets timeline
+**** TODO Analyze text : mentions on heat, spurs + sentiment  = support
+*** Performance
+**** MapReduce benchmarks
+*** Other Resources
+    - [[https://blog.twitter.com/2013/king-cup-legend-sports][Some Analysis on the same done by Twitter]]
+    - Great inspiration [[http://www.facebookstories.com/stories/22692/visualizing-the-nba-finals-conversation-on-facebook][Facebook NBA viz by Jérôme Cukier]]
+** My Circles
+*** Synopsis
+    - Grab followers/followings of an account
+    - Grab followers/followings of first circle (ie only the ones followed and following)
+    - Compute importance based on account infos
+    - Visualize graph with 3 circles :
+      - friends (followed/following)
+      - followings
+      - followers
+    - Analyze how tweets impacts the various circles : engagement
+** Influence, Engagement
+   - Engagement Rate per tweet : ( # of retweet + # of citation  ) / # of followers from [[http://www.socialbakers.com/blog/467-formulas-revealed-the-facebook-and-twitter-engagement-rate][socialbakers.com]]
+* Cloud of Links
+** Synopsis
+   - Data : list of items 
+   - Find/Guess (sub-)categories / topics of items 
+   - Viz1 : Cloud tags of topics/category with filters on time (week,day,month,year) and categories
+   - Viz2 : Zoomable Heat Maps
+** Uses Cases
+*** RAI datasets
+   - List of news (url,title,source,date)
+*** Personal Bookmarks
+   - (url, title , [comment] , category, [sub categories])
+** Zoomable HeatMap 
+It's based daily heat map like for github activity but in addition you can change the time scale :
+   - day : 1 year = 52 cols x 7 rows 
+   - week : 1 year = 12 cols x 5 rows
+   - month : 1 year = 4 cols x 3 rows
+   - quarter : 1 year = 1 col x 4 rows
+   - year : 10 years = 2 cols x 5 rows
+   - decade : 100 years = 2 cols x 5 rows
+   - century : 1000 years = 2 cols x 5 rows
+...
+
+With the following features :
+   - each change of scale keep size unchanged 
+   - color same only scale change
+   - each cell represents of group of items, on click display details
+** Visualization
+Based on 2 components :
+   - Summary view with filters : cloud or heatmap
+   - Details view scrollable 
+* World of Maps
+** Torino Events
+*** Synopsis
+    - Scrape events from newspapers web-site, eventbrite,...
+    - Viz : heat city map instead of circle. More dark is the color more they are
+    - 
+*** City Map
+**** TODO Found nice torino maps 
+**** Resources
+[[http://www.comeetie.fr/projects.php][Etienne Côme's project]] cited by [[http://mgrafit.tumblr.com/post/53693775593/interactive-maps-of-paris-several-projects-have][maps of paris in mgrafit's blog]]
+    - [[http://www.comeetie.fr/galerie/velib/in.html][Etienne Côme's velib viz 1]]
+    - [[http://www.comeetie.fr/galerie/velib/][Etienne Côme's velib viz 2]]
+
+** World Meteo
+* Visiblity/Importance
+** Most Important Tweet
+** Detect negative trend in trademark
+** Visibility from @faces
+* Beyond MapReduce
+** Review Bill Rowe's class
+** Cascading/Cascalog
+* Machine Learning
+** Kaggle Automatic Deep Learning 
+*** Synopsis
+   - With the same methodology than in [[http://fastml.com/deep-learning-made-easy/][Deep Learning Made Easy]] resolve any other kaggle problems
+** Bishop's Recommended System Visualization 
+*** Synopsis
+    Just mimic the amazing visualization presented during this Bishop's interview 
+** Weka Usage
+*** Synopsis
+    Go step-by-step through a weky session when resolving a kaggle challenge using Weka UI.
+** R Usage
+*** Synopsis
+    - Same as Weka usage but in R
+    - Stress on difference between the tools 
+    - Pros/cons
+** Python Usage
+*** Synopsis
+    - compare IPython / plain console usage
+** Clojure Usage
+*** Synopsis
+    - REPL session
