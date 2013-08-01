@@ -1,0 +1,7 @@
+* Tweet Anaylsis During NBA Finals 2013
+** Data Anaylsis With Cascalog
+
+** Usage
+#+BEGIN_SRC clojure
+lein run data/test/game7.test.txt data/test/game7.keywords.txt data/en.stop data/test/error
+#+END_SRC
