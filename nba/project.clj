@@ -17,7 +17,9 @@
                  [clojure-csv/clojure-csv "2.0.0-alpha2"]
                  ;[org.clojars.sunng/geohash "1.0.1"]
                  [org.clojure/data.json "0.2.2"]
-                 [date-clj "1.0.1"]]
+                 [clj-time "0.5.1"]
+                 ;[date-clj "1.0.1"]
+                 ]
   :exclusions [org.apache.hadoop/hadoop-core
                org.clojure/clojure]
   :profiles {:dev {:dependencies [[midje-cascalog "0.4.0"]

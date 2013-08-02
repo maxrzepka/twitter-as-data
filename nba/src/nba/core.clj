@@ -6,7 +6,9 @@
              [cascalog.more-taps :as cmt]
              [clojure.string :as s]
              [clojure.data.json :as json]
-             [clojure-csv.core :as csv]))
+             [clojure-csv.core :as csv]
+             [clj-time.core :as t]
+             [clj-time.format :as tf]))
 
 (defn parse-psv
   "Parse pipe-separated line"  
@@ -99,6 +101,11 @@ Naive answer : any string containing only a given set of characters
                  (when-not (hyperlink? w) w)))
         (s/split t #"[\s]+")))
 
+(def datetime-formatter (tf/formatter "MMM dd HH:mm:ss +0000 yyyy"))
+(defn parse-datetime [s]
+  (tf/parse datetime-formatter
+            (.substring s 4)))
+
 (defn extractor
   "Extract from json tweets the following tweets :
      - extract id , lang , text , hastags, mentions
@@ -108,13 +115,15 @@ Naive answer : any string containing only a given set of characters
   ((juxt :id :lang :text
          (build-extract-join [:entities :hashtags] :text)
          (build-extract-join [:entities :user_mentions] :screen_name)
-         (comp split-tweet :text))
+         (comp split-tweet :text)
+         (comp parse-datetime :created_at)
+         )   
    tweet))
 
 (defn etl-tweet
   [dir & {:keys [delimiter trap] :or {delimiter \| trap "error"} :as opts}]
   (ca/<- [?id ?lang ?text ?hashtags ?mentions ?terms]
-         (extractor ?tweet :> ?id ?lang ?text ?hashtags ?mentions ?terms)
+         (extractor ?tweet :> ?id ?lang ?text ?hashtags ?mentions ?terms ?created_at)
          ((ca/lfs-textline dir) ?line)
          ;; TODO  extract header to extract search keywords used how?         
          (parse-json ?line :> ?tweet)
