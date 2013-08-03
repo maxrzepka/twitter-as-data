@@ -94,17 +94,26 @@ Naive answer : any string containing only a given set of characters
      (fn [m]
        (map f (get-in m ks)))))
 
+
 (defn split-tweet
   "Plain fct to split text by space , clean terms and remove hyperlinks"
   [t]
   (keep (fn [w] (let [w (scrub-text w)]
-                 (when-not (hyperlink? w) w)))
+                 (when (or (seq w)
+                           (not (hyperlink? w))) w)))
         (s/split t #"[\s]+")))
 
 (def datetime-formatter (tf/formatter "MMM dd HH:mm:ss +0000 yyyy"))
 (defn parse-datetime [s]
-  (tf/parse datetime-formatter
-            (.substring s 4)))
+  (try
+    (tf/parse datetime-formatter (.substring s 4))
+    (catch Throwable t nil)))
+
+;; (map (comp (juxt identity time-split) last butlast extractor) (file->tweet ...))
+(defn time-split [d]
+  (if d
+    ((juxt t/hour t/minute t/sec) d)
+    []))
 
 ;; Test Data : json tweets
 ;; (def tw (map parse-json (rest (.split (slurp "data/test/game7.test.txt") "\n"))))
@@ -131,12 +140,13 @@ Naive answer : any string containing only a given set of characters
          )   
    tweet))
 
+(def tweet-fields ["?id" "?lang" "?text" "?hashtags" "?mentions" "?terms" "?created_at" "?coord"])
+
 (defn etl-tweet
-  [dir & {:keys [delimiter trap] :or {delimiter \| trap "error"} :as opts}]
+  [dir & {:keys [trap] :or {trap "error"} :as opts}]
   (ca/<- [?id ?lang ?text ?hashtags ?mentions ?terms ?created_at ?coord]
-         (extractor ?tweet :> ?id ?lang ?text ?hashtags ?mentions ?terms ?created_at ?coord)
+         (extractor ?tweet :>> tweet-fields)
          ((ca/lfs-textline dir) ?line)
-         ;; TODO  extract header to extract search keywords used how?         
          (parse-json ?line :> ?tweet)
          (:trap (ca/lfs-textline trap))))
 
@@ -157,25 +167,45 @@ Naive answer : any string containing only a given set of characters
   "Source of all terms by tweet : in = output of etl-tweet"
   [in]
   (ca/<- [?id ?term]         
-          (list1 ?terms :> ?term)         
-          (in :> ?id ?lang ?text ?hashtag ?mention ?terms ?created_at ?coord)))
+         (list1 ?terms :> ?term)
+         (in :>> tweet-fields)))
 
 (defn terms-frequency
   "in = output of etl-tweet"
   [in]
-  (ca/<- [?term ?count]         
+  (ca/<- [?term ?count]
          (co/count ?count)
          ((terms in) ?id ?term)))
 
-; (most-frequent-terms (etl-tweet "data/test/"))
 (defn top-most
   "Order by agg and returns query"
   [count-q n agg]
   (co/first-n count-q n :sort [agg] :reverse true))
 
+; (top-most-frequent-terms (etl-tweet "data/test/"))
 (defn top-most-frequent-terms
   [in n]
-  (ca/??- (top-most (terms-frequency in) n "?count")))
+  (top-most (terms-frequency in) n "?count"))
+
+(defn time-count
+  [in]
+  (ca/<- [?hour ?minute ?second ?count]
+         (co/count ?count)
+         (in :>> tweet-fields)
+         (time-split ?created_at :> ?hour ?minute ?second)
+         (:trap (ca/lfs-textline "error/time-count"))))
+
+(defn top-most-busy-time
+  [in n]
+  (top-most (time-count in) n "?count"))
+
+(defn localized? [c]
+  (boolean (seq c)))
+
+(defn localize [in]
+  (ca/<- [?id ?coord]
+         (localized? ?coord)
+         (in :>> tweet-fields)))
 
 ;; TD-IDF from Cascalog for the impatient adapted to tweets (just renaming)
 ;; https://github.com/Quantisan/Impatient/blob/cascalog/part6/src/impatient/core.clj
@@ -198,8 +228,7 @@ Naive answer : any string containing only a given set of characters
 
 (defn tf-idf-formula [tf-count df-count n-tweets]
   (->> (+ 1.0 df-count)
-    (ca/div n-tweets)
-    (Math/log)
+    (ca/div n-tweets)    (Math/log)
     (* tf-count)))
 
 (defn TF-IDF [src]
@@ -222,10 +251,13 @@ Naive answer : any string containing only a given set of characters
     (ca/?- "ETL tweet data"
         (ca/lfs-seqfile tweet-stage :sinkmode :replace)
         (etl-tweet in :trap (str trap "/tweet")))
+    (ca/?- "Time Aggregation"
+           (cmt/lfs-delimited (str out "/time") :sinkmode :replace)
+           (time-count (ca/lfs-seqfile tweet-stage)))
     (ca/?- "Most Frequent Terms"
            (cmt/lfs-delimited (str out "/freqterms") :sinkmode :replace)
            (top-most-frequent-terms (ca/lfs-seqfile tweet-stage) 100))
-    (ca/?- "TF-IDF Terms Frequency"
+    (ca/?- "TF-IDF for terms"
            (cmt/lfs-delimited (str out "/tdidf") :sinkmode :replace)
            (TF-IDF (terms (ca/lfs-seqfile tweet-stage))))
     ))
