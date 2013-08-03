@@ -247,17 +247,25 @@ Naive answer : any string containing only a given set of characters
 
 ;; Main Function
 (defn -main [in out searchkeys stop trap]
-  (let [tweet-stage "data/out/tweet"]
+  (let [tweet-stage "data/out/tweet"
+        term-stage "data/out/term"]
     (ca/?- "ETL tweet data"
         (ca/lfs-seqfile tweet-stage :sinkmode :replace)
         (etl-tweet in :trap (str trap "/tweet")))
     (ca/?- "Time Aggregation"
            (cmt/lfs-delimited (str out "/time") :sinkmode :replace)
-           (time-count (ca/lfs-seqfile tweet-stage)))
+           (time-count (ca/lfs-seqfile tweet-stage) :trap (str trap "/time")))
+    (ca/?- "Terms"
+           (cmt/lfs-delimited term-stage :sinkmode :replace)
+           (terms (ca/lfs-seqfile tweet-stage)
+                  (cmt/lfs-delimited stop)
+                  :trap (str trap "/term")))
     (ca/?- "Most Frequent Terms"
-           (cmt/lfs-delimited (str out "/freqterms") :sinkmode :replace)
-           (top-most-frequent-terms (ca/lfs-seqfile tweet-stage) 100))
-    (ca/?- "TF-IDF for terms"
-           (cmt/lfs-delimited (str out "/tdidf") :sinkmode :replace)
-           (TF-IDF (terms (ca/lfs-seqfile tweet-stage))))
-    ))
+           (cmt/lfs-delimited (str out "/freqterm") :sinkmode :replace)
+           (top-most-frequent-terms (cmt/lfs-delimited term-stage) 100))
+    (let [src (ca/name-vars (cmt/lfs-delimited term-stage) ["?id" "?term"])]
+      (ca/?- "TF-IDF for terms"
+             (cmt/lfs-delimited (str out "/tdidf") :sinkmode :replace)
+             (TF-IDF src)
+            ;(TF-IDF (cmt/lfs-delimited term-stage))
+            ))))
