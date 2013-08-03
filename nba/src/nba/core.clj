@@ -106,6 +106,15 @@ Naive answer : any string containing only a given set of characters
   (tf/parse datetime-formatter
             (.substring s 4)))
 
+;; Test Data : json tweets
+;; (def tw (map parse-json (rest (.split (slurp "data/test/game7.test.txt") "\n"))))
+
+(defn file->tweets
+  "Parse a file line by line and parse them if in json format"
+  [path]
+  (keep (fn [s] (try (parse-json s) (catch Throwable t nil)))
+        (.split (slurp path) "\n")))
+
 (defn extractor
   "Extract from json tweets the following tweets :
      - extract id , lang , text , hastags, mentions
@@ -117,13 +126,15 @@ Naive answer : any string containing only a given set of characters
          (build-extract-join [:entities :user_mentions] :screen_name)
          (comp split-tweet :text)
          (comp parse-datetime :created_at)
+         ;;cannot return nil so returns empty array
+         (fn [t] (:coordinates (:coordinates t) [])) 
          )   
    tweet))
 
 (defn etl-tweet
   [dir & {:keys [delimiter trap] :or {delimiter \| trap "error"} :as opts}]
-  (ca/<- [?id ?lang ?text ?hashtags ?mentions ?terms]
-         (extractor ?tweet :> ?id ?lang ?text ?hashtags ?mentions ?terms ?created_at)
+  (ca/<- [?id ?lang ?text ?hashtags ?mentions ?terms ?created_at ?coord]
+         (extractor ?tweet :> ?id ?lang ?text ?hashtags ?mentions ?terms ?created_at ?coord)
          ((ca/lfs-textline dir) ?line)
          ;; TODO  extract header to extract search keywords used how?         
          (parse-json ?line :> ?tweet)
@@ -141,12 +152,13 @@ Naive answer : any string containing only a given set of characters
 
 (ca/defmapcatop list1 [coll] (seq coll))
 
+;;TODO refactor to put as constant list of fields givent by the extractor
 (defn terms
   "Source of all terms by tweet : in = output of etl-tweet"
   [in]
   (ca/<- [?id ?term]         
           (list1 ?terms :> ?term)         
-          (in :> ?id ?lang ?text ?hashtag ?mention ?terms)))
+          (in :> ?id ?lang ?text ?hashtag ?mention ?terms ?created_at ?coord)))
 
 (defn terms-frequency
   "in = output of etl-tweet"
@@ -156,13 +168,14 @@ Naive answer : any string containing only a given set of characters
          ((terms in) ?id ?term)))
 
 ; (most-frequent-terms (etl-tweet "data/test/"))
-(defn top20-most-frequent-terms
-  "Depends on etl-tweet "
-  [in]
-  (let [count-q (terms-frequency in)
-        q (co/first-n count-q 20 :sort ["?count"] :reverse true)]
-    (ca/??- q)))
+(defn top-most
+  "Order by agg and returns query"
+  [count-q n agg]
+  (co/first-n count-q n :sort [agg] :reverse true))
 
+(defn top-most-frequent-terms
+  [in n]
+  (ca/??- (top-most (terms-frequency in) n "?count")))
 
 ;; TD-IDF from Cascalog for the impatient adapted to tweets (just renaming)
 ;; https://github.com/Quantisan/Impatient/blob/cascalog/part6/src/impatient/core.clj
@@ -207,9 +220,12 @@ Naive answer : any string containing only a given set of characters
 (defn -main [in out searchkeys stop trap]
   (let [tweet-stage "data/out/tweet"]
     (ca/?- "ETL tweet data"
-        (ca/lfs-seqfile tweet-stage)
+        (ca/lfs-seqfile tweet-stage :sinkmode :replace)
         (etl-tweet in :trap (str trap "/tweet")))
-    (ca/?- "Terms Frequency"
-           (cmt/lfs-delimited out)
+    (ca/?- "Most Frequent Terms"
+           (cmt/lfs-delimited (str out "/freqterms") :sinkmode :replace)
+           (top-most-frequent-terms (ca/lfs-seqfile tweet-stage) 100))
+    (ca/?- "TF-IDF Terms Frequency"
+           (cmt/lfs-delimited (str out "/tdidf") :sinkmode :replace)
            (TF-IDF (terms (ca/lfs-seqfile tweet-stage))))
     ))
