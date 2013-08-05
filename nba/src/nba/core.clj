@@ -96,11 +96,11 @@ Naive answer : any string containing only a given set of characters
 
 
 (defn split-tweet
-  "Plain fct to split text by space , clean terms and remove hyperlinks"
+  "split text by space, clean words and remove hyperlinks"
   [t]
   (keep (fn [w] (let [w (scrub-text w)]
-                 (when (or (seq w)
-                           (not (hyperlink? w))) w)))
+                 (when (and (seq w)
+                            (not (hyperlink? w))) w)))
         (s/split t #"[\s]+")))
 
 (def datetime-formatter (tf/formatter "MMM dd HH:mm:ss +0000 yyyy"))
@@ -111,12 +111,9 @@ Naive answer : any string containing only a given set of characters
 
 ;; (map (comp (juxt identity time-split) last butlast extractor) (file->tweet ...))
 (defn time-split [d]
-  (if d
+  (if-let [d (parse-datetime d)]
     ((juxt t/hour t/minute t/sec) d)
     []))
-
-;; Test Data : json tweets
-;; (def tw (map parse-json (rest (.split (slurp "data/test/game7.test.txt") "\n"))))
 
 (defn file->tweets
   "Parse a file line by line and parse them if in json format"
@@ -134,7 +131,7 @@ Naive answer : any string containing only a given set of characters
          (build-extract-join [:entities :hashtags] :text)
          (build-extract-join [:entities :user_mentions] :screen_name)
          (comp split-tweet :text)
-         (comp parse-datetime :created_at)
+         :created_at
          ;;cannot return nil so returns empty array
          (fn [t] (:coordinates (:coordinates t) [])) 
          )   
@@ -160,51 +157,62 @@ Naive answer : any string containing only a given set of characters
 ;;   - classes : spurs , miamiheat , both , none , positive , neutral , negative
 ;;
 
+
 (ca/defmapcatop list1 [coll] (seq coll))
 
-;;TODO refactor to put as constant list of fields givent by the extractor
-(defn terms
-  "Source of all terms by tweet : in = output of etl-tweet"
-  [in]
-  (ca/<- [?id ?term]         
-         (list1 ?terms :> ?term)
-         (in :>> tweet-fields)))
+(defn expand-stop-field
+  "Returns a query [?id ?term] where ?field is expand Given an tweet input tap expand the given field and exclude "
+  [in stop field & {:keys [trap] :or {trap "error/stop"} :as opts}]
+  (ca/<- [?id ?term]
+         (stop ?term :> false)
+         (list1 field :> ?term)
+         (in :>> tweet-fields)
+         (:trap (ca/lfs-textline trap))))
 
 (defn terms-frequency
-  "in = output of etl-tweet"
+  "Given a input tap of tuples (id term) , returns query of term frequency"
   [in]
   (ca/<- [?term ?count]
          (co/count ?count)
-         ((terms in) ?id ?term)))
+         (in ?id ?term)))
 
 (defn top-most
-  "Order by agg and returns query"
-  [count-q n agg]
-  (co/first-n count-q n :sort [agg] :reverse true))
+  "returns query of top n for agg"
+  [count-q n agg & {:keys [trap] :or {trap "error/top"} :as opts}]
+  (co/first-n count-q n :sort [agg] :reverse true :trap trap))
 
 ; (top-most-frequent-terms (etl-tweet "data/test/"))
 (defn top-most-frequent-terms
-  [in n]
-  (top-most (terms-frequency in) n "?count"))
+  [in n & {:keys [trap] :or {trap "error/top"} :as opts}]
+  (top-most (terms-frequency in) n "?count" :trap trap))
+
+(defn searchkey-terms
+  "Count how many times a searchkey find a tweet"
+  [in searchkeys & {:keys [trap] :or {trap "error/terms"} :as opts}]
+  (ca/<- [?id ?term]
+         (searchkeys ?term :> true)
+         (list1 ?terms :> ?term)
+         (in :>> tweet-fields)
+         (:trap (ca/lfs-textline trap))))
 
 (defn time-count
-  [in]
+  [in & {:keys [trap] :or {trap "error/time"} :as opts}]
   (ca/<- [?hour ?minute ?second ?count]
          (co/count ?count)
          (in :>> tweet-fields)
          (time-split ?created_at :> ?hour ?minute ?second)
-         (:trap (ca/lfs-textline "error/time-count"))))
+         (:trap (ca/lfs-textline trap))))
 
-(defn top-most-busy-time
+(defn busiest-time
   [in n]
   (top-most (time-count in) n "?count"))
 
-(defn localized? [c]
+(defn non-empty? [c]
   (boolean (seq c)))
 
-(defn localize [in]
+(defn localize [in  & {:keys [trap] :or {trap "error/local"} :as opts}]
   (ca/<- [?id ?coord]
-         (localized? ?coord)
+         (non-empty? ?coord)
          (in :>> tweet-fields)))
 
 ;; TD-IDF from Cascalog for the impatient adapted to tweets (just renaming)
@@ -228,8 +236,9 @@ Naive answer : any string containing only a given set of characters
 
 (defn tf-idf-formula [tf-count df-count n-tweets]
   (->> (+ 1.0 df-count)
-    (ca/div n-tweets)    (Math/log)
-    (* tf-count)))
+       (ca/div n-tweets)
+       (Math/log)
+       (* tf-count)))
 
 (defn TF-IDF [src]
   (let [n-tweet (first (flatten (ca/??- (D src))))]
@@ -238,34 +247,67 @@ Naive answer : any string containing only a given set of characters
         ((DF src) ?tf-term ?df-count)
         (tf-idf-formula ?tf-count ?df-count n-tweet :> ?tf-idf))))
 
-;; Some Analysis (only on english tweet ? ) :
-;;   - unsupervised clustering based on TD-IDF
-;;   - sentiment analysis on tweet
-;;   - based on terms classes, perform clustering
-;;   - supervised classification ( spurs , heat , neutral , both)
-
 
 ;; Main Function
 (defn -main [in out searchkeys stop trap]
-  (let [tweet-stage "data/out/tweet"
-        term-stage "data/out/term"]
+  (let [tweet-stage (str out "/tweet")
+        term-stage (str out "/term")]
     (ca/?- "ETL tweet data"
         (ca/lfs-seqfile tweet-stage :sinkmode :replace)
         (etl-tweet in :trap (str trap "/tweet")))
     (ca/?- "Time Aggregation"
            (cmt/lfs-delimited (str out "/time") :sinkmode :replace)
            (time-count (ca/lfs-seqfile tweet-stage) :trap (str trap "/time")))
+    (ca/?- "Only localized Tweets"
+           (cmt/lfs-delimited (str out "/local") :sinkmode :replace)
+           (localize (ca/lfs-seqfile tweet-stage) :trap (str trap "/local")))    
+    (ca/?- "Hashtag Count"
+           (cmt/lfs-delimited (str out "/hashtag") :sinkmode :replace)
+           (terms-frequency
+            (expand-stop-field (ca/lfs-seqfile tweet-stage)
+                               [] "?hashtags" :trap (str trap "/hashtag"))))
+    (ca/?- "Mentions Count"
+           (cmt/lfs-delimited (str out "/mention") :sinkmode :replace)
+           (terms-frequency
+            (expand-stop-field (ca/lfs-seqfile tweet-stage)
+                               [] "?mentions" :trap (str trap "/mention"))))
+    (ca/?- "Searchkeys Count"
+           (cmt/lfs-delimited (str out "/search") :sinkmode :replace)
+           (terms-frequency
+            (searchkey-terms (ca/lfs-seqfile tweet-stage)
+                             (cmt/lfs-delimited searchkeys)
+                             :trap (str trap "/search"))))
     (ca/?- "Terms"
            (cmt/lfs-delimited term-stage :sinkmode :replace)
-           (terms (ca/lfs-seqfile tweet-stage)
-                  (cmt/lfs-delimited stop)
-                  :trap (str trap "/term")))
+           (expand-stop-field
+            (ca/lfs-seqfile tweet-stage)
+            (cmt/lfs-delimited stop)
+            "?terms"
+            :trap (str trap "/term")))
     (ca/?- "Most Frequent Terms"
            (cmt/lfs-delimited (str out "/freqterm") :sinkmode :replace)
-           (top-most-frequent-terms (cmt/lfs-delimited term-stage) 100))
+           (top-most-frequent-terms (cmt/lfs-delimited term-stage)
+            100 :trap (str trap "/mostterm")))
     (let [src (ca/name-vars (cmt/lfs-delimited term-stage) ["?id" "?term"])]
       (ca/?- "TF-IDF for terms"
              (cmt/lfs-delimited (str out "/tdidf") :sinkmode :replace)
              (TF-IDF src)
-            ;(TF-IDF (cmt/lfs-delimited term-stage))
-            ))))
+             ;(TF-IDF (cmt/lfs-delimited term-stage))
+             (:trap (ca/lfs-textline (str trap "/tdidf")))))))
+
+
+;; Some queries for testing
+#_(-main "data/test/game7.test.txt" "data/out/test"
+         "data/test/game7.keywords.txt" "data/en.stop" "data/out/test/error")
+
+#_(ca/??- (terms-frequency
+           (expand-stop-field
+            (etl-tweet "data/test/game7.test.txt") [] "?hashtags")))
+
+#_(ca/??- (terms-frequency
+           (expand-stop-field
+            (ca/lfs-seqfile "data/out/tweet") [] "?hashtags"
+            :trap "data/out/test/error")))
+#_(ca/??- (searchkey-terms
+           (etl-tweet "data/test/game7.test.txt")
+           (cmt/lfs-delimited "data/test/game7.keywords.txt")))
